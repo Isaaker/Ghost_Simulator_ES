@@ -15,11 +15,11 @@ jobs:
     
     steps:
     -Name: Install PHP Compiler
-    run: |
-    apt-get install libapache2-mod-php5
-    apt-get install php5-common
-    apt-get install php5-cli
-    apt list --installed
+      run: |
+      apt-get install libapache2-mod-php5
+      apt-get install php5-common
+      apt-get install php5-cli
+      apt list --installed
     -Name: PHP Runner
-    run: |
-    php PHP_Ghost_Simulator.php
+      run: |
+      php PHP_Ghost_Simulator.php

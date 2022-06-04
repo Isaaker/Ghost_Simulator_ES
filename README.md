@@ -6,7 +6,7 @@
 
 ## Status:
 
-[![PHP Composer](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_runner.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_runner.yml)
+
 
 ## Sobre el Proyecto
 

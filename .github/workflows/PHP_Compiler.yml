@@ -19,7 +19,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        sudo apt-get install libapache2-mod-php5 install php5-common install php5-cli
+        sudo apt-get install libapache2-mod-php8 php8-common php8-cli
         apt list --installed
 
 # -Name: PHP Runner

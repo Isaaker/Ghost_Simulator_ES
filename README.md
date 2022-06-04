@@ -14,8 +14,14 @@ Este proyecto de código abierto, consiste en generar puntuaciones aleatorias en
 
 El Código esta escrito en PHP y tiene una estructura bastante simple, los datos que se implementan en el proyecto se encuentran en la carpeta Data en formato CSV.
 
+## Licencia
+
+
+
+
 ## Collaborate / Colaborar
 
+**Importante: Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)**
 
 Para colaborar puedes elegir una de las siguientes opciones:
 

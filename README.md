@@ -32,4 +32,5 @@ Para colaborar puedes elegir una de las siguientes opciones:
 1. [Google Forms](https://forms.gle/Jmu25CKyMpyUXwccA) (Si no tienes una cuenta de GitHub)
 2. [GitHub Issues](https://github.com/Isaaker/Ghost_Simulator_ES/issues) (Si Dispones de una Cuenta de GitHub)
 3. Colaborar desarrollando código, [lee la wiki](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)
-4. Si se te ocurre otra forma de colaborar [escríbeme](hernan.marti.isaac@gmail.com).
+4. Colaborar con los datos (CSV). **Por favor antes lee esto**
+5. Si se te ocurre otra forma de colaborar [escríbeme](hernan.marti.isaac@gmail.com).

@@ -22,8 +22,6 @@ jobs:
       run: |
         sudo apt-get install php
         apt list --installed
-    - name: Install dependencies
+    - name: Runner
       run: |
-        pwd
-        ls -a
-        php PHP_Ghost_Simulator.php
+        php -f PHP_Ghost_Simulator.php

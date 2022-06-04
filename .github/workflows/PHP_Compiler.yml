@@ -23,4 +23,6 @@ jobs:
         apt list --installed
     - name: Install dependencies
       run: |
+        pwd
+        ls -a
         php PHP_Ghost_Simulator.php

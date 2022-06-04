@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<?php
+	<?php
 	//Conservar esto
 	//Head2
 	echo "<h1> Ghost Archery Simulator </h1>";

@@ -16,17 +16,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
+    
     - name: Install dependencies
       run: |
-        sudo -i
-        apt-get install libapache2-mod-php5
-        apt-get install php5-common
-        apt-get install php5-cli
+        sudo apt-get install libapache2-mod-php5 install php5-common install php5-cli
         apt list --installed
 
 # -Name: PHP Runner

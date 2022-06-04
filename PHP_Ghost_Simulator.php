@@ -14,7 +14,7 @@
  	//Variables
 
 	//ArcoCompuestoSub15AireLibreHombre
-	$ACS15AH = rand(127 , 150);
+	$ACS15ALH = rand(127 , 150);
 
         //ArcoCompuestoSub15AirelibreMujer
         $ACS15ALM = "No Data";

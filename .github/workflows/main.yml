@@ -1,0 +1,14 @@
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    
+    steps:
+    -Name: Install PHP Compiler
+    run: |
+    apt-get install php5-common libapache2-mod-php5 php5-cli
+    apt list --installed
+    -Name: PHP Runner
+    run: |
+    php PHP_Ghost_Simulator.php

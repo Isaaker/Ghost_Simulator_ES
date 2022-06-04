@@ -8,5 +8,5 @@ To report a Vulnerability please contact my with one of the metods on Contact Se
 ## Contact
 
 - [E-Mail](mailto:hernan.marti.isaac@gmail.com)
-- [Telegram](t.me/piscinadeentropia.es)
-- [Other metods](piscinadeentropia.es/contacto)
+- [Telegram](https://t.me/piscinadeentropia.es)
+- [Other metods](https://piscinadeentropia.es/contacto)

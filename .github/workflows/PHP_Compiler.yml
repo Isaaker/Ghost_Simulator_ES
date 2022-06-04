@@ -24,4 +24,4 @@ jobs:
         apt list --installed
     - name: Runner
       run: |
-        php -f PHP_Ghost_Simulator.php
+        php -l PHP_Ghost_Simulator.php

@@ -23,6 +23,7 @@ jobs:
         python-version: "3.10"
     - name: Install dependencies
       run: |
+        sudo -i
         apt-get install libapache2-mod-php5
         apt-get install php5-common
         apt-get install php5-cli

@@ -15,11 +15,14 @@ Este proyecto de código abierto, consiste en generar puntuaciones aleatorias en
 El Código esta escrito en PHP y tiene una estructura bastante simple, los datos que se implementan en el proyecto se encuentran en la carpeta Data en formato CSV.
 
 ## Licencia
+![Creative Commons License Logo]([)](http://creativecommons.org/licenses/by-nc-nd/4.0/)![image](https://user-images.githubusercontent.com/77550577/172003571-9936841a-064e-447b-b26e-dc5080cb3c05.png)
+
+Todo el contenido presente en este repositorio y todas las aportaciones creadas en el repositorio (De acuerdo a lo ya indicado en el apartado colaborar). Quedan bajo la licencia: Creative Commons Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Licencia Pública Internacional — CC BY-NC-ND 4.0, que puedes consulta [aqui](https://github.com/Isaaker/Ghost_Simulator).
 
 
 
 
-## Collaborate / Colaborar
+## Colaborar
 
 **Importante: Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)**
 

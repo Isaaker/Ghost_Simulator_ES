@@ -17,7 +17,7 @@ El Código esta escrito en PHP y tiene una estructura bastante simple, los datos
 
 ![Creative Commons License Logo](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/Images/Creative%20Commons.png)
 
-Todo el contenido presente en este repositorio y todas las aportaciones creadas en el repositorio (De acuerdo a lo ya indicado en el apartado colaborar). Quedan bajo la licencia: Creative Commons Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Licencia Pública Internacional — CC BY-NC-ND 4.0, que puedes consulta [aqui](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt).
+Todo el contenido presente en este repositorio y todas las aportaciones creadas en el repositorio (De acuerdo a lo ya indicado en el apartado colaborar). Quedan bajo la licencia: Creative Commons Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Licencia Pública Internacional — CC BY-NC-ND 4.0, que puedes consultar [aqui](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt).
 
 
 

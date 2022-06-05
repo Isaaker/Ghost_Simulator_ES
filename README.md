@@ -6,7 +6,6 @@
 
 ## Status:
 
-[![PHP Runner](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/PHP_Compiler.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/PHP_Compiler.yml)
 
 ## Sobre el Proyecto
 

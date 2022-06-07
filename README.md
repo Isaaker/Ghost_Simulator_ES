@@ -5,6 +5,8 @@
 
 ## Status:
 
+[![.github/workflows/server_PHP.yml](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/server_PHP.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/server_PHP.yml)
+
 ## Registrarse en la web
 Para registrarte en la web [pincha aqui](https://forms.gle/GxU8BVdvJi37yJMN8)
 

@@ -1,5 +1,4 @@
-# Ghost_Simulator_ES 🇪🇸
-
+![Ghost Simulator ES](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/archery.png)
 
 
 **Creado por:** [Isaaker](https://github.com/Isaaker)

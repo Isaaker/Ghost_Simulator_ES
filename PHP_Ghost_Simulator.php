@@ -11,7 +11,7 @@
 	<?php
 	//Desing Settings
 	//Head2
-	echo '<img src="./images/archery.png" width="1500px" height="300px">';
+	echo '<img src="./images/archery.png" width="1400px" height="300px">';
 	echo "<hr>";
 	echo "<h3><a href=".">Recargar fantasmas</a></h3>";
 	echo "<hr>";

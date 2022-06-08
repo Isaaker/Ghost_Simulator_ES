@@ -225,14 +225,14 @@
 	//ArcoOlimpicoAbsolutoAireLibreHombre
 	echo "<b>Arco Olimpico Absoluto Aire Libre Hombre</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $AOAALH . " (Round Completo)";
+        echo "Puntuación a Batir: " . $AOAALH . " (Set)";
         echo "<br>";
 
 
 	//ArcoOlimpicoAbsolutoAireLibreMujer
         echo "<b>Arco Olimpico Absoluto Aire Libre Mujer</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $AOAALM . " (Round Completo)";
+        echo "Puntuación a Batir: " . $AOAALM . " (Set)";
         echo "<br>";
 
 	//Instintivo
@@ -241,14 +241,14 @@
 	//ArcoInstintivoAbsolutoAireLibreHombre
         echo "<b>Arco Instintivo Absoluto Aire Libre Hombre</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $AIAALH . " (Round Completo)";
+        echo "Puntuación a Batir: " . $AIAALH . " (Set)";
         echo "<br>";
 
 
 	//ArcoInstintivoAbsolutoAireLibreMujer
         echo "<b>Arco Instintivo Absoluto Aire Libre Mujer</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $AIAALM . " (Round Completo)";
+        echo "Puntuación a Batir: " . $AIAALM . " (Set)";
         echo "<br>";
 
 	//Arco LongBow
@@ -257,13 +257,13 @@
 	//ArcoLongBowAbsolutoAireLibreHombre
 	echo "<b>Arco Long Bow Absoluto Aire Libre Hombre</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $ALBAALH . " (Round Completo)";
+        echo "Puntuación a Batir: " . $ALBAALH . " (Set)";
         echo "<br>";
 
 	//ArcoLongBowAbsolutoAireLibreMujer
         echo "<b>Arco Long Bow Absoluto Aire Libre Mujer</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $ALBAALM . " (Round Completo)";
+        echo "Puntuación a Batir: " . $ALBAALM . " (Set)";
         echo "<br>";
 
 
@@ -274,13 +274,13 @@
 	//ArcoDesnudoAbsolutoAireLibreHombre
         echo "<b>Arco Desnudo Absoluto Aire Libre Hombre</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $ADAALH . " (Round Completo)";
+        echo "Puntuación a Batir: " . $ADAALH . " (Set)";
         echo "<br>";
 
 	//ArcoDesnudoAbsolutoAireLibreMujer
         echo "<b>Arco Desnudo Absoluto Aire Libre Mujer</b>";
         echo "<br>";
-        echo "Puntuación a Batir: " . $ADAALM . " (Round Completo)";
+        echo "Puntuación a Batir: " . $ADAALM . " (Set)";
 
 
 

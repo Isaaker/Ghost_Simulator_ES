@@ -11,12 +11,17 @@
 	<?php
 	//Desing Settings
 	//Head2
+	echo "<a href='https://forms.gle/CGVYM4LKMh8xNckEA'>Ayuda</a>" . " |  " . "<a href='https://github.com/Isaaker/Ghost_Simulator_ES'>Codigo Fuente</a>" . " |  " . "<a href='https://forms.gle/sbXYCztpQM5Qr3VS7'>Registrarse</a>";
 	echo '<img src="./images/archery.png" width="1500px" height="300px">';
 	echo "<hr>";
-	echo "<h3><a href=".">Recargar fantasmas</a></h3>";
+	echo "<a href=".">Recargar Fantasma</a>" . " |  " . "<a href='./ghost.php? '>Resetear Categorías</a>";
 	echo "<hr>";
  	//Base de Datos
 
+	//Variable a mostrar
+	$category = $_GET["category"];
+	$age = $_GET["age"];
+	$sex = $_GET["sex"];
 	//Sub15
 
 	//ArcoCompuestoSub15AireLibreHombre
@@ -33,13 +38,13 @@
 
 	//Sub19
 
-	//ArcoCompuestoSub19AireLibreHombre
+	//ArcoCompuestoSub19AireLibreHombre 
 	$ACS19ALH = rand(140 , 150);
 
 	//ArcoCompuestoSub19AireLibreMujer
 	$ACS19ALM = rand(135 , 150);
 
-	//ArcoOlimpicoSub19AireLibrHombre
+	//ArcoOlimpicoSub19AireLibrHombre 
 	$AOS19ALH = rand(27 , 30);
 
 	//ArcoOlimpicoSub19AireLibreMujer
@@ -49,13 +54,13 @@
 
 	//ArcoCompuestoSub21AireLibreHombre
 	$ACS21ALH = rand(140 , 150);
-
+	
 	//ArcoCompuestoSub21AireLibreMujer
 	$ACS21ALM = rand(131 , 150);
 
 	//ArcoOlimpicoSub21AireLibreHombre
 	$AOS21ALH = rand(24, 30);
-
+	
 	//ArcoOlimpicoSub21AireLibreMujer
 	$AOS21ALM = rand(25, 30);
 
@@ -90,204 +95,248 @@
 
 	//ArcoDesnudoAbsolutoAireLibreMujer
 	$ADAALM = rand(20, 30);
+	
 
-
-        //Echos
-
-        //Exterior
-	echo "<h2> Aire Libre</h2>";
-        echo "<hr>";
-
-	//Menores
-	echo "<b>> 14</b>";
-	echo "<hr>";
-
-        //ArcoCompuestoSub15AireLibreHombre
-        //Variable: $ACS15ALH
-        echo "<b>Arco Compuesto Sub 15 Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ACS15ALH . " (Round Completo)";
-        echo "<br>";
-
-        //ArcoCompuestoSub15AirelibreMujer
-        //Variable: $ACS15ALM
-        echo "<b>Arco Compuesto Sub 15 Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: DATA NOT AVAILABLE";
-        echo "<br>";
-
-	//Olimpico
-        echo "<hr>";
-
-	//ArcoOlimpicoSub15AireLibreHombre
-	//Variable: $AOS15ALH
-	echo "<b>Arco Olimpico  Sub 15 Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $AOS15ALH. " (Set)";
+	//Select	
+	echo "<b>Selecciona entre las siguientes opciones:</b>";
 	echo "<br>";
-
-	//ArcoOlimpicoSub15AireLibreMujer
-	//Variable: $AOS15ALM
-	echo "<b>Arco Olimpico  Sub 15 Aire Libre Mujer</b>";
+	echo "Sexo:";
 	echo "<br>";
-	echo "Puntuación a Batir: " .  $AOS15ALM. " (Set)";
-	echo "<br>";
+	echo "<a href='./ghost.php?sex=h'>Hombre</a>" . " " . "<a href='./ghost.php?sex=m'>Mujer</a>";
+	//If URL
+	//Sexo
+	if ($sex == "h"){
+		echo "<br>";
+		echo "Categoría:";
+		echo "<br>";
+		echo "<a href='./ghost.php?sex=h&category=c'>Compuesto</a>" . " " . "<a href='./ghost.php?sex=h&category=o'>Olímpico</a>" . " " . "<a href='./ghost.php?sex=h&category=i'>Instintivo</a>" . " " . "<a href='./ghost.php?sex=h&category=lb'>Long Bow</a>" . " " . "<a href='./ghost.php?sex=h&category=d'>Desnudo</a>";
+		//Compuesto
+		if ($category == "c"){
+			echo "<br>";
+               		echo "Edad:";
+                	echo "<br>";
+                	echo "<a href='./ghost.php?sex=h&category=c&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=h&category=c&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=h&category=c&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=h&category=c&age=a'>Absoluto</a>";
+			echo "<hr>";
+			if ($age == "s15"){
+			echo "<b>Arco Compuesto Sub 15 Aire Libre Hombre</b>";
+			echo "<br>";
+			echo "Puntuacion a batir: " . $ACS15ALH; 
+			}	
+			
+			if ($age == "s19"){
+			echo "<b>Arco Compuesto Sub 19 Aire Libre Hombre</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $ACS19ALH;
+			}
 
-	//Cadete
-	echo "<hr>";
-        echo "<b> > 19</b>";
-        echo "<hr>";
+			if ($age == "s21"){
+                	echo "<b>Arco Compuesto Sub 21 Aire Libre Hombre</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $ACS19ALH;
+                	}
 
-	//ArcoCompuestoSub19AireLibreHombre
-	echo "<b>Arco Compuesto  Sub 19 Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $ACS19ALH. " (Round Completo)";
-        echo "<br>";
+			if ($age == "a"){
+                	echo "<b>Arco Compuesto Absoluto Aire Libre Hombre</b>";
+               		echo "<br>";
+                	echo "Puntuacion a batir: " . $ACAALH;
+                	}
+		} 	
+		//Olímpico
+		if ($category == "o"){
+			echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=h&category=o&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=h&category=o&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=h&category=o&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=h&category=o&age=a'>Absoluto</a>";
+                        echo "<hr>";
+                	if ($age == "s15"){
+                	echo "<b>Arco Olímpico Sub 15 Aire Libre Hombre</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOS15ALH;
+                	}
 
-	//ArcoCompuestoSub19AireLibreMujer
-        echo "<b>Arco Compuesto  Sub 19 Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $ACS19ALM. " (Round Completo)";
-        echo "<br>";
+                	if ($age == "s19"){
+                	echo "<b>Arco Olímpico Sub 19 Aire Libre Hombre</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOS19ALH;
+                	}
 
-	//Olimpico
-	echo "<hr>";
+                	if ($age == "s21"){
+                	echo "<b>Arco Olímpico Sub 21 Aire Libre Hombre</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOS19ALH;
+                	}
 
-	//ArcoOlimpicoSub19AireLibreHombre
-        //Variable: $AOS19ALH
-        echo "<b>Arco Olimpico  Sub 19 Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $AOS19ALH. " (Set)";
-        echo "<br>";
+			if ($age == "a"){
+                	echo "<b>Arco Olímpico Absoluto Aire Libre Hombre</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOAALH;
+                	}
+        	}	
+                
+		//Instintivo
+                if ($category == "i"){
+                        echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=h&category=i&age=a'>Absoluto</a>";
+                        echo "<hr>";
 
-	//ArcoOlimpicoSub19AireLibreMujer
-        //Variable: $AOS19ALM
-        echo "<b>Arco Olimpico  Sub 19 Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $AOS19ALM. " (Set)";
+                        if ($age == "a"){
+                        echo "<b>Arco Instintivo Absoluto Aire Libre Hombre</b>";
+                        echo "<br>";
+                        echo "Puntuacion a batir: " . $AIAALH;
+                        }
+		}
 
+		//LongBow
+                if ($category == "lb"){
+                        echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=h&category=lb&age=a'>Absoluto</a>";
+                        echo "<hr>";
 
-	//Junior
-	echo "<hr>";
-	echo "<b> > 21 </b>";
-	echo "<hr>";
+                        if ($age == "a"){
+                        echo "<b>Arco Long Bow Absoluto Aire Libre Hombre</b>";
+                        echo "<br>";
+                        echo "Puntuacion a batir: " . $ALBAALH;
+                        }
+                }
+		
+		//Desnudo
+                if ($category == "d"){
+                        echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=h&category=d&age=a'>Absoluto</a>";
+                        echo "<hr>";
 
-	//ArcoCompuestoSub21AireLibreHombre
-	echo "<b>Arco Compuesto  Sub 21 Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $ACS21ALH. " (Round Completo)";
-        echo "<br>";
+                        if ($age == "a"){
+                        echo "<b>Arco Desnudo Absoluto Aire Libre Hombre</b>";
+                        echo "<br>";
+                        echo "Puntuacion a batir: " . $ADAALH;
+                        }
+                }
+        }
+	
+	if ($sex == "m"){
+		echo "<br>";
+		echo "Categoría:";
+		echo "<br>";
+		echo "<a href='./ghost.php?sex=m&category=c'>Compuesto</a>" . " " . "<a href='./ghost.php?sex=m&category=o'>Olímpico</a>" . " " . "<a href='./ghost.php?sex=m&category=i'>Instintivo</a>" . " " . "<a href='./ghost.php?sex=m&category=lb'>Long Bow</a>" . " " . "<a href='./ghost.php?sex=m&category=d'>Desnudo</a>";
+		//Compuesto
+		if ($category == "c"){
+			echo "<br>";
+               		echo "Edad:";
+                	echo "<br>";
+                	echo "<a href='./ghost.php?sex=m&category=c&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=m&category=c&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=m&category=c&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=m&category=c&age=a'>Absoluto</a>";
+			echo "<hr>";
+			if ($age == "s15"){
+			echo "<b>Arco Compuesto Sub 15 Aire Libre Mujer</b>";
+			echo "<br>";
+			echo "Puntuacion a batir: " . $ACS15ALM;
+			}
 
-	//ArcoCompuestoSub21AireLibreMujer
-        echo "<b>Arco Compuesto  Sub 21 Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $ACS21ALM. " (Round Completo)";
-        echo "<br>";
+			if ($age == "s19"){
+			echo "<b>Arco Compuesto Sub 19 Aire Libre Mujer</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $ACS19ALM;
+			}
 
-	//Olimpico
-	echo "<hr>";
+			if ($age == "s21"){
+                	echo "<b>Arco Compuesto Sub 21 Aire Libre Mujer</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $ACS19ALM;
+                	}
 
+			if ($age == "a"){
+                	echo "<b>Arco Compuesto Absoluto Aire Libre Mujer</b>";
+               		echo "<br>";
+                	echo "Puntuacion a batir: " . $ACAALM;
+                	}
+		}
+		//Olímpico
+		if ($category == "o"){
+			echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=m&category=o&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=m&category=o&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=m&category=o&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=m&category=o&age=a'>Absoluto</a>";
+                        echo "<hr>";
+                	if ($age == "s15"){
+                	echo "<b>Arco Olímpico Sub 15 Aire Libre Mujer</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOS15ALM;
+                	}
 
-	//ArcoOlimpicoSub21AireLibreHombre
-	echo "<b>Arco Olimpico Sub 21 Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $AOS21ALH. " (Round Completo)";
-        echo "<br>";
+                	if ($age == "s19"){
+                	echo "<b>Arco Olímpico Sub 19 Aire Libre Mujer</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOS19ALM;
+                	}
 
-	//ArcoOlimpicoSub21AireLibreMujer
-	echo "<b>Arco Olimpico Sub 21 Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " .  $AOS21ALM. " (Round Completo)";
-        echo "<br>";
+                	if ($age == "s21"){
+                	echo "<b>Arco Olímpico Sub 21 Aire Libre Mujer</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOS19ALM;
+                	}
 
-	//Absoluto
-        echo "<hr>";
-        echo "<b> Absoluto </b>";
-        echo "<hr>";
+			if ($age == "a"){
+                	echo "<b>Arco Olímpico Absoluto Aire Libre Mujer</b>";
+                	echo "<br>";
+                	echo "Puntuacion a batir: " . $AOAALM;
+                	}
+        	}
 
-	//Compuesto
+		//Instintivo
+                if ($category == "i"){
+                        echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=h&category=i&age=a'>Absoluto</a>";
+                        echo "<hr>";
 
-	//ArcoCompuestoAbsolutoAireLibreHombre
-        echo "<b>Arco Compuesto  Absoluto Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ACAALH . " (Round Completo)";
-        echo "<br>";
+                        if ($age == "a"){
+                        echo "<b>Arco Instintivo Absoluto Aire Libre Mujer</b>";
+                        echo "<br>";
+                        echo "Puntuacion a batir: " . $AIAALM;
+                        }
+		}
 
-	//ArcoCompuestoAbsolutoAireLibreMujer
-        echo "<b>Arco Compuesto  Absoluto Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ACAALM . " (Round Completo)";
-        echo "<br>";
+		//LongBow
+                if ($category == "lb"){
+                        echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=m&category=lb&age=a'>Absoluto</a>";
+                        echo "<hr>";
 
-	//Olimpico
-	echo "<hr>";
+                        if ($age == "a"){
+                        echo "<b>Arco Long Bow Absoluto Aire Libre Mujer</b>";
+                        echo "<br>";
+                        echo "Puntuacion a batir: " . $ALBAALM;
+                        }
+                }
 
-	//ArcoOlimpicoAbsolutoAireLibreHombre
-	echo "<b>Arco Olimpico Absoluto Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $AOAALH . " (Round Completo)";
-        echo "<br>";
+		//Desnudo
+                if ($category == "d"){
+                        echo "<br>";
+                        echo "Edad:";
+                        echo "<br>";
+                        echo "<a href='./ghost.php?sex=m&category=d&age=a'>Absoluto</a>";
+                        echo "<hr>";
 
-
-	//ArcoOlimpicoAbsolutoAireLibreMujer
-        echo "<b>Arco Olimpico Absoluto Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $AOAALM . " (Round Completo)";
-        echo "<br>";
-
-	//Instintivo
-	echo "<hr>";
-
-	//ArcoInstintivoAbsolutoAireLibreHombre
-        echo "<b>Arco Instintivo Absoluto Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $AIAALH . " (Round Completo)";
-        echo "<br>";
-
-
-	//ArcoInstintivoAbsolutoAireLibreMujer
-        echo "<b>Arco Instintivo Absoluto Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $AIAALM . " (Round Completo)";
-        echo "<br>";
-
-	//Arco LongBow
-	echo "<hr>";
-
-	//ArcoLongBowAbsolutoAireLibreHombre
-	echo "<b>Arco Long Bow Absoluto Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ALBAALH . " (Round Completo)";
-        echo "<br>";
-
-	//ArcoLongBowAbsolutoAireLibreMujer
-        echo "<b>Arco Long Bow Absoluto Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ALBAALM . " (Round Completo)";
-        echo "<br>";
-
-
-	//Arco Desnudo
-	echo "<hr>";
-
-
-	//ArcoDesnudoAbsolutoAireLibreHombre
-        echo "<b>Arco Desnudo Absoluto Aire Libre Hombre</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ADAALH . " (Round Completo)";
-        echo "<br>";
-
-	//ArcoDesnudoAbsolutoAireLibreMujer
-        echo "<b>Arco Desnudo Absoluto Aire Libre Mujer</b>";
-        echo "<br>";
-        echo "Puntuación a Batir: " . $ADAALM . " (Round Completo)";
-
-
-
+                        if ($age == "a"){
+                        echo "<b>Arco Desnudo Absoluto Aire Libre Mujer</b>";
+                        echo "<br>";
+                        echo "Puntuacion a batir: " . $ADAALM;
+                        }
+                }
+        }
 	//Pie de Pagina
 	echo "<hr>";
-	echo "Creado por: " . '<a href="https://piscinadeentropia.es">Isaaker</a>' . " y " . '<a href="https://pruebadeconcepto.es">Antonio Hernán</a>' .  " | Funciona con: " . '<a href="https://www.php.net">PHP</a>' . " | " . '<a href="https://github.com/Isaaker/Ghost_Simulator_ES">Codigo Fuente</a>' . " | Datos procedentes de: " . '<a href="https://www.ianseo.net">I@nseo</a>' . " | Esta Web se ha creado sin colaboración de niguna federación y se alamacena en un servidor privado";
-
+	echo "<div align='center'>© Isaac Hernán Martí</div><br>"; 
+	echo "<br>";
+	echo "<div align='center'>Agradecimientos especiales: Antonio J. Hernán Obispo y  Erica Hernán Martí</div><br>";
 	//Conservar esto
 	?>
 </body>

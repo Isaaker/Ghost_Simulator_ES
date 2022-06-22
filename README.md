@@ -25,9 +25,11 @@ Todo el contenido presente en este repositorio y todas las aportaciones creadas 
 
 ## Colaborar
 
-**Importante: Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)**
+**Antes de colaborar:**
+1. Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)
+2. Lee el [CODE_OF_CONDUCT](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/CODE_OF_CONDUCT.md)
 
-Para colaborar puedes elegir una de las siguientes opciones:
+Para colaborar primer puedes elegir una de las siguientes opciones:
 
 1. [Google Forms](https://forms.gle/fZGYEDDGrmGxnjGT8) (Si no tienes una cuenta de GitHub)
 2. [GitHub Issues](https://github.com/Isaaker/Ghost_Simulator_ES/issues) (Si Dispones de una Cuenta de GitHub)

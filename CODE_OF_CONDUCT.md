@@ -28,11 +28,13 @@ Algunas faltas leves pueden ser:
 - Publicación de información personal de otras personas sin autorización (E-Mail, Numero de Telefono...)
 Consecuencias:
 Aviso escrito por parte de los Administradores de la comunidad y petición para que se pidan disculpas a las personas afectadas. - Cada dos faltas leves habra una falta grave
+
 **Falta Grave**
 Algunas faltas graves pueden ser:
 - Acoso  de caulquier tipo
 Consecuencias:
 Expulsión temporal de la comunidad durante 30 días - Mas de una falta grave conllevara una falta muy grave
+
 **Falta muy Grave**
 Si la persona presenta un patron de incumplimientos del codigo de conducta o si ya tiene mas de una falta grave.
 Consecuencias:

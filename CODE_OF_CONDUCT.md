@@ -36,6 +36,7 @@ Consecuencias:
 Expulsión temporal de la comunidad durante 30 días - Mas de una falta grave conllevara una falta muy grave
 
 **Falta muy Grave**
+
 Si la persona presenta un patron de incumplimientos del codigo de conducta o si ya tiene mas de una falta grave.
 Consecuencias:
 Expulsión permanente de la comunidad

@@ -1,12 +1,12 @@
-# Ghost_Simulator_ES 🇪🇸
+![Ghost Simulator ES](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/archery.png)
 
-
-
-**Creado por:** [Isaaker](https://github.com/Isaaker)
 
 ## Status:
 
-[![PHP Composer](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_runner.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_runner.yml)
+
+
+## Registrarse en la web
+Para registrarte en la web [pincha aqui](https://forms.gle/GxU8BVdvJi37yJMN8)
 
 ## Sobre el Proyecto
 
@@ -16,20 +16,23 @@ El Código esta escrito en PHP y tiene una estructura bastante simple, los datos
 
 ## Licencia
 
-![Creative Commons License Logo](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/Images/Creative%20Commons.png)
+![Creative Commons License Logo](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/Creative%20Commons.png)
 
-Todo el contenido presente en este repositorio y todas las aportaciones creadas en el repositorio (De acuerdo a lo ya indicado en el apartado colaborar). Quedan bajo la licencia: Creative Commons Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Licencia Pública Internacional — CC BY-NC-ND 4.0, que puedes consulta [aqui](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt).
+Todo el contenido presente en este repositorio y todas las aportaciones creadas en el repositorio (De acuerdo a lo ya indicado en el apartado colaborar). Quedan bajo la licencia: Creative Commons Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Licencia Pública Internacional — CC BY-NC-ND 4.0, que puedes consultar [aqui](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt).
 
 
 
 
 ## Colaborar
 
-**Importante: Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)**
+**Antes de colaborar:**
+1. Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)
+2. Lee el [CODE_OF_CONDUCT](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/CODE_OF_CONDUCT.md)
 
-Para colaborar puedes elegir una de las siguientes opciones:
+Para colaborar primer puedes elegir una de las siguientes opciones:
 
-1. [Google Forms](https://forms.gle/Jmu25CKyMpyUXwccA) (Si no tienes una cuenta de GitHub)
+1. [Google Forms](https://forms.gle/fZGYEDDGrmGxnjGT8) (Si no tienes una cuenta de GitHub)
 2. [GitHub Issues](https://github.com/Isaaker/Ghost_Simulator_ES/issues) (Si Dispones de una Cuenta de GitHub)
 3. Colaborar desarrollando código, [lee la wiki](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)
-4. Si se te ocurre otra forma de colaborar [escríbeme](hernan.marti.isaac@gmail.com).
+4. Colaborar con los datos (CSV). **Por favor antes lee esto**
+5. Si se te ocurre otra forma de colaborar [escríbeme](archery.ghost.simulator@gmail.com).

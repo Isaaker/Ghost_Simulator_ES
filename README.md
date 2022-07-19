@@ -3,7 +3,7 @@
 
 ## Status:
 
-
+[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)
 
 ## Registrarse en la web
 Para registrarte en la web [pincha aqui](https://forms.gle/GxU8BVdvJi37yJMN8)

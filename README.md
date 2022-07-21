@@ -5,34 +5,32 @@
 
 [![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)
 
-## Registrarse en la web
-Para registrarte en la web [pincha aqui](https://forms.gle/GxU8BVdvJi37yJMN8)
+## Register on the site
+To register on the site [click here](https://forms.gle/GxU8BVdvJi37yJMN8)
 
-## Sobre el Proyecto
+## About the project
 
-Este proyecto de código abierto, consiste en generar puntuaciones aleatorias en eliminatorias que se haría por así decirlo el "fantasma" e intentar batirlas.
+This open source project, is to generate random scores in heats that would be done so to speak the "ghost" and try to beat them.
 
-El Código esta escrito en PHP y tiene una estructura bastante simple, los datos que se implementan en el proyecto se encuentran en la carpeta Data en formato CSV.
+The code is written in PHP and has a fairly simple structure, the data that are implemented in the project are in the Data folder in CSV format.
 
-## Licencia
+## License
 
 ![Creative Commons License Logo](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/Creative%20Commons.png)
 
-Todo el contenido presente en este repositorio y todas las aportaciones creadas en el repositorio (De acuerdo a lo ya indicado en el apartado colaborar). Quedan bajo la licencia: Creative Commons Atribución/Reconocimiento-NoComercial-SinDerivados 4.0 Licencia Pública Internacional — CC BY-NC-ND 4.0, que puedes consultar [aqui](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt).
+All the content present in this repository and all the contributions created in the repository (According to what has already been indicated in the section collaborate). They are licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License - CC BY-NC-ND 4.0, which you can consult [here](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt).
 
 
 
 
-## Colaborar
+## Colaborate
 
-**Antes de colaborar:**
+**Before Colaborate:**
 1. Al colaborar aceptas que a todo el contenido y aportaciones creadas por usted queden bajo la licencia del repositorio. (Ver apartado Licencia)
 2. Lee el [CODE_OF_CONDUCT](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/CODE_OF_CONDUCT.md)
 
 Para colaborar primer puedes elegir una de las siguientes opciones:
 
-1. [Google Forms](https://forms.gle/fZGYEDDGrmGxnjGT8) (Si no tienes una cuenta de GitHub)
-2. [GitHub Issues](https://github.com/Isaaker/Ghost_Simulator_ES/issues) (Si Dispones de una Cuenta de GitHub)
-3. Colaborar desarrollando código, [lee la wiki](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)
-4. Colaborar con los datos (CSV). **Por favor antes lee esto**
-5. Si se te ocurre otra forma de colaborar [escríbeme](archery.ghost.simulator@gmail.com).
+1. Colaborate making an issue: [Google Forms](https://forms.gle/fZGYEDDGrmGxnjGT8) (If you don't have a GitHub account)  |  [GitHub Issues](https://github.com/Isaaker/Ghost_Simulator_ES/issues) (If You Have a GitHub Account)
+2. Colaborate in Github with code: [Read this](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)
+5. If you think of another way to collaborate [e-mail](archery.ghost.simulator@gmail.com).

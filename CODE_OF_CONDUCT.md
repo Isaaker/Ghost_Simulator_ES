@@ -43,7 +43,7 @@ If the person has a pattern of non-compliance with the code of conduct or has mo
 Consequences:
 Permanent expulsion from the community.
 
-## Comunicación y aplicación del codigo de conducta
+## Communication and application of the code of conduct
 The code of conduct will be enforced by the Community Administrators, so if you detect unacceptable or inappropriate behavior within the community please notify the administrators through the following contact methods:
 - [E-Mail](mailto:isaaker.hernan@protonmail.com)
 - [Telegram](t.me/isaaker)

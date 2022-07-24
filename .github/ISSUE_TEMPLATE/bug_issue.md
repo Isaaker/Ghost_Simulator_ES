@@ -22,7 +22,7 @@ labels: 'bug'
 * [ ] Did you check the Documentation available?
 * [ ] Are you reporting to the correct repository?
 
-For more information, see the [Contributing](/docs/CONTRIBUTING.md) guide.
+For more information, see the [Contributing](https://github.com/Isaaker/Ghost_Simulator_ES/wiki/How_to_colaborate_with_code) guide.
 
 **Describe the bug**
 A clear and concise description of what the bug is.

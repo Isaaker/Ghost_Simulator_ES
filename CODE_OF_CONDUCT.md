@@ -1,49 +1,49 @@
-**Todas las personas que colaboren en este proyecto se compromenten a respetar el sigueinte codigo de conducta. Ya sea de forma pública o privada en los espacios de esta comunidad**
+**All the people who collaborate in this project commit themselves to respect the following code of conduct. Whether publicly or privately in the spaces of this community**
 
-## Ejemplos de comportamiento que ayudan a una mejor convivencia
+## Examples of behavior that help to improve coexistence
 
-- Demostrar empatía y amabilidad ante otras personas
-- Respeto a diferentes opiniones, puntos de vista y experiencias
-- Dar y aceptar adecuadamente retroalimentación constructiva
-- Aceptar la responsabilidad y disculparse ante quienes se vean afectados por nuestros errores, aprendiendo de la experiencia
-- Centrarse en lo que sea mejor no sólo para nosotros como individuos, sino para la comunidad en general
+- Demonstrating empathy and kindness to other people
+- Respect for different opinions, points of view and experiences
+- Giving and accepting constructive feedback appropriately
+- Accepting responsibility and apologizing to those who are affected by our mistakes, learning from the experience
+- Focusing on what is best not only for us as individuals, but for the community at large
 
 
-## Ejemplos de comportamientos prohibdos en nuestra comunidad
+## Examples of prohibited behaviors in our community
 
-- El uso de lenjuage mal sonante o inadecuado
-- Acoso de cualquier tipo
-- Comentarios despectivos (trolling), insultantes o derogatorios, y ataques personales o políticos
-- Publicación de información personal de otras personas sin autorización (E-Mail, Numero de Telefono...)
-- Cualquier otro tipo de conducta que pueda resultar inadecuada para la comunidad
+- The use of foul-sounding or inappropriate language
+- Harassment of any kind
+- derogatory (trolling), insulting or derogatory comments, and personal or political attacks
+- Unauthorized publication of other people's personal information (e-mail, phone number, etc.).
+- Any other type of conduct that may be inappropriate for the community.
 
-## Consecuencias de comportamieento inadecuados
+## Consequences of inappropriate behaviors
 
-En consecuencia cualquer comportamiento inapropiado dentro de esta comunidad, conllevara la toma de mediadas por parte de los administradores utilizando las siguiente medias de aplicación:
+Consequently, any inappropriate behavior within this community will result in action being taken by the administrators using the following enforcement measures:
 
-**Falta Leve**
-Algunas faltas leves pueden ser:
-- Uso de lenguaje inapropiado o mal sonante
-- Comentarios despectivos (trolling), insultantes o derogatorios, y ataques personales o políticos
-- Publicación de información personal de otras personas sin autorización (E-Mail, Numero de Telefono...)
-Consecuencias:
-Aviso escrito por parte de los Administradores de la comunidad y petición para que se pidan disculpas a las personas afectadas. - Cada dos faltas leves habra una falta grave
+**Minor Fault**
+Some minor offenses may include:
+- Use of inappropriate or bad-sounding language
+- Derogatory comments (trolling), insulting or derogatory, and personal or political attacks.
+- Publication of other people's personal information without authorization (e-mail, phone number...).
+Consequences:
+Written warning by the Administrators of the community and request to apologize to the affected persons. - Every two minor faults there will be a serious fault.
 
-**Falta Grave**
-Algunas faltas graves pueden ser:
-- Acoso  de caulquier tipo
+**Serious Fault**
+Serious misconduct may include:
+- Harassment of any kind
 
-Consecuencias:
-Expulsión temporal de la comunidad durante 30 días - Mas de una falta grave conllevara una falta muy grave
+Consequences:
+Temporary expulsion from the community for 30 days - More than one serious misconduct will result in a very serious misconduct.
 
-**Falta muy Grave**
+**Very Serious Fault**
 
-Si la persona presenta un patron de incumplimientos del codigo de conducta o si ya tiene mas de una falta grave.
+If the person has a pattern of non-compliance with the code of conduct or has more than one serious misconduct.
 
-Consecuencias:
-Expulsión permanente de la comunidad
+Consequences:
+Permanent expulsion from the community.
 
-## Comunicación y aplicación del codigo de conducta
-El codigo de conducta sera aplicado por los Administradores de la Comunidad, por ello si detectas una conducta inaceptable o inadecuada dentro de la comunidad por favor notficalo a los administradores através de los siguientes metodos de contacto:
+## Communication and application of the code of conduct
+The code of conduct will be enforced by the Community Administrators, so if you detect unacceptable or inappropriate behavior within the community please notify the administrators through the following contact methods:
 - [E-Mail](mailto:isaaker.hernan@protonmail.com)
 - [Telegram](t.me/isaaker)

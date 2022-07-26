@@ -5,8 +5,10 @@
 
 [![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)
 
+
 ## Register on the site
 To register on the site [click here](https://forms.gle/GxU8BVdvJi37yJMN8)
+
 
 ## About the project
 

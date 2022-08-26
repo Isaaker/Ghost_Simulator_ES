@@ -11,10 +11,11 @@
 	<?php
 	//Desing Settings
 	//Head2
-	echo "<a href='https://forms.gle/CGVYM4LKMh8xNckEA'>Ayuda</a>" . " |  " . "<a href='https://github.com/Isaaker/Ghost_Simulator_ES'>Codigo Fuente</a>" . " |  " . "<a href='https://forms.gle/sbXYCztpQM5Qr3VS7'>Registrarse</a>";
-	echo '<img src="./images/archery.png" width="1500px" height="300px">';
+	echo "<button> <a href='https://forms.gle/CGVYM4LKMh8xNckEA'>Ayuda</a> </button>" .  "<button> <a href='https://github.com/Isaaker/Ghost_Simulator_ES'>Codigo Fuente</a> </button>" .  "<button> <a href='https://forms.gle/sbXYCztpQM5Qr3VS7'>Registrarse</a> </button>";
+	echo "<br>";
+	echo '<img src="./images/archery.png" width="100%" height=auto>';
 	echo "<hr>";
-	echo "<a href=".">Recargar Fantasma</a>" . " |  " . "<a href='./ghost.php? '>Resetear Categorías</a>";
+	echo "<button> <a href=".">Recargar Fantasma</a> </button>" . "<button> <a href='./ghost.php? '>Resetear Categorías</a> </button>";
 	echo "<hr>";
  	//Base de Datos
 
@@ -38,13 +39,13 @@
 
 	//Sub19
 
-	//ArcoCompuestoSub19AireLibreHombre 
+	//ArcoCompuestoSub19AireLibreHombre
 	$ACS19ALH = rand(140 , 150);
 
 	//ArcoCompuestoSub19AireLibreMujer
 	$ACS19ALM = rand(135 , 150);
 
-	//ArcoOlimpicoSub19AireLibrHombre 
+	//ArcoOlimpicoSub19AireLibrHombre
 	$AOS19ALH = rand(27 , 30);
 
 	//ArcoOlimpicoSub19AireLibreMujer
@@ -54,13 +55,13 @@
 
 	//ArcoCompuestoSub21AireLibreHombre
 	$ACS21ALH = rand(140 , 150);
-	
+
 	//ArcoCompuestoSub21AireLibreMujer
 	$ACS21ALM = rand(131 , 150);
 
 	//ArcoOlimpicoSub21AireLibreHombre
 	$AOS21ALH = rand(24, 30);
-	
+
 	//ArcoOlimpicoSub21AireLibreMujer
 	$AOS21ALM = rand(25, 30);
 
@@ -95,21 +96,21 @@
 
 	//ArcoDesnudoAbsolutoAireLibreMujer
 	$ADAALM = rand(20, 30);
-	
 
-	//Select	
+
+	//Select
 	echo "<b>Selecciona entre las siguientes opciones:</b>";
 	echo "<br>";
 	echo "Sexo:";
 	echo "<br>";
-	echo "<a href='./ghost.php?sex=h'>Hombre</a>" . " " . "<a href='./ghost.php?sex=m'>Mujer</a>";
+	echo "<button><a href='./ghost.php?sex=h'>Hombre</a></button>" . " " . "<button><a href='./ghost.php?sex=m'>Mujer</a></button>";
 	//If URL
 	//Sexo
 	if ($sex == "h"){
 		echo "<br>";
 		echo "Categoría:";
 		echo "<br>";
-		echo "<a href='./ghost.php?sex=h&category=c'>Compuesto</a>" . " " . "<a href='./ghost.php?sex=h&category=o'>Olímpico</a>" . " " . "<a href='./ghost.php?sex=h&category=i'>Instintivo</a>" . " " . "<a href='./ghost.php?sex=h&category=lb'>Long Bow</a>" . " " . "<a href='./ghost.php?sex=h&category=d'>Desnudo</a>";
+		echo "<button><a href='./ghost.php?sex=h&category=c'>Compuesto</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=o'>Olímpico</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=i'>Instintivo</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=lb'>Long Bow</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=d'>Desnudo</a></button>";
 		//Compuesto
 		if ($category == "c"){
 			echo "<br>";
@@ -120,9 +121,9 @@
 			if ($age == "s15"){
 			echo "<b>Arco Compuesto Sub 15 Aire Libre Hombre</b>";
 			echo "<br>";
-			echo "Puntuacion a batir: " . $ACS15ALH; 
-			}	
-			
+			echo "Puntuacion a batir: " . $ACS15ALH;
+			}
+
 			if ($age == "s19"){
 			echo "<b>Arco Compuesto Sub 19 Aire Libre Hombre</b>";
                 	echo "<br>";
@@ -140,7 +141,7 @@
                		echo "<br>";
                 	echo "Puntuacion a batir: " . $ACAALH;
                 	}
-		} 	
+		}
 		//Olímpico
 		if ($category == "o"){
 			echo "<br>";
@@ -171,8 +172,8 @@
                 	echo "<br>";
                 	echo "Puntuacion a batir: " . $AOAALH;
                 	}
-        	}	
-                
+        	}
+
 		//Instintivo
                 if ($category == "i"){
                         echo "<br>";
@@ -202,7 +203,7 @@
                         echo "Puntuacion a batir: " . $ALBAALH;
                         }
                 }
-		
+
 		//Desnudo
                 if ($category == "d"){
                         echo "<br>";
@@ -218,7 +219,7 @@
                         }
                 }
         }
-	
+
 	if ($sex == "m"){
 		echo "<br>";
 		echo "Categoría:";
@@ -334,7 +335,7 @@
         }
 	//Pie de Pagina
 	echo "<hr>";
-	echo "<div align='center'>© Isaac Hernán Martí</div><br>"; 
+	echo "<center>© Isaac Hernán Martí</center>";
 	echo "<br>";
 	echo "<div align='center'>Agradecimientos especiales: Antonio J. Hernán Obispo y  Erica Hernán Martí</div><br>";
 	//Conservar esto

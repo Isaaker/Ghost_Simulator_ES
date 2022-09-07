@@ -1,0 +1,6 @@
+Columna1;Colunma2
+ fila 1v1; fila 1v2
+ fila 2v1; fila 2v2
+ fila 3v1; fila 3v2
+ fila 4v1; fila 4v2
+    ; fila 6v2

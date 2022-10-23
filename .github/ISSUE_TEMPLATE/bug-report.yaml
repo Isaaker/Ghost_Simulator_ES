@@ -112,5 +112,5 @@ body:
           required: true
         - label: I have checked that my issue does not contain any relevant security data (Passwords, Secrets or Users)
           required: true
-        - label: I have checked that my issue is not a Security Vulneability ([Security Policy](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/SECURITY.md)
+        - label: I have checked that my issue is not a Security Vulneability [Security Policy](https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/SECURITY.md)
           required: true

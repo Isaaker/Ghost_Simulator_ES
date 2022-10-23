@@ -84,7 +84,7 @@ body:
     attributes:
       label: OS Version
       description: Tell us the Version of OS, if you select other also tell us your operative system name
-      placeholder: Example: Monterey 12.6
+      placeholder: Example -> Monterey 12.6
     validations:
       required: true
   - type: textarea

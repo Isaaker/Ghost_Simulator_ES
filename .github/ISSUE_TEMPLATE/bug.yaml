@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thank you for creating this issue, please tell us more about the problem.
   - type: input
     id: contact
     attributes:

@@ -2,7 +2,6 @@ name: Remote Error
 description: Problems with Remote Server (Server on which the php page is served)
 title: "[Remote Error]: "
 labels: ["Remote Error"]
-assignees:
 body:
   - type: markdown
     attributes:

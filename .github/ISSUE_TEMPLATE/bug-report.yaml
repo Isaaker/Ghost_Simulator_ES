@@ -1,7 +1,7 @@
-name: Remote Error
-description: Problems with Remote Server (Server on which the php page is served)
-title: "[Remote Error]: "
-labels: ["Remote Error"]
+name: Bug Report
+description: Report a Bug
+title: "[BUG]: "
+labels: ["Remote Bug"]
 body:
   - type: markdown
     attributes:

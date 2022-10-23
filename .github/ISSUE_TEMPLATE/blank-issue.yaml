@@ -20,7 +20,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: Please check the following questions
+      description: Please check if the following questions
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

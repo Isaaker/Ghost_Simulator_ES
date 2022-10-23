@@ -36,5 +36,9 @@ All the content present in this repository and all the contributions created in 
 Para colaborar primer puedes elegir una de las siguientes opciones:
 
 1. Colaborate making an issue: [Google Forms](https://forms.gle/fZGYEDDGrmGxnjGT8) (If you don't have a GitHub account)  |  [GitHub Issues](https://github.com/Isaaker/Ghost_Simulator_ES/issues) (If You Have a GitHub Account)
-2. Colaborate in Github with code: [Read this](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)
+2. Colaborate in Github with code: [Read this](https://github.com/Isaaker/Ghost_Simulator_ES/wiki/How-does-the-repository-work%3F)
 5. If you think of another way to collaborate [e-mail](archery.ghost.simulator@gmail.com).
+
+## Documentation
+
+[Read the wiki](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)

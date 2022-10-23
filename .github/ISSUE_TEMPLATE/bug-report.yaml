@@ -12,7 +12,7 @@ body:
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: email@example.com
+      placeholder: Example -> email@example.com
     validations:
       required: false
   - type: textarea
@@ -60,7 +60,7 @@ body:
     attributes:
       label: Browser Version
       description: Tell us the name the version of your browser
-      placeholder: Example: Version 16.0
+      placeholder: Example -> Version 16.0
     validations:
       required: true
   - type: dropdown

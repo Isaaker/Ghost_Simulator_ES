@@ -23,7 +23,7 @@ body:
       label: Code of Conduct
       description: Please check if the following questions
       options:
-        - label: I select a issue category, on the rigth menu bar
+        - label: I select a issue Label, on the rigth menu bar
           required: true
         - label: I agree to follow this project's Code of Conduct
           required: true

@@ -41,4 +41,4 @@ Para colaborar primer puedes elegir una de las siguientes opciones:
 
 ## Documentation
 
-[Read the wiki](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)
+The documention about the project is on the [Wiki](https://github.com/Isaaker/Ghost_Simulator_ES/wiki)

@@ -1,6 +1,0 @@
-# This file only include HTML Syntax GitHub Action Settings
-# Don`t Run it
-
-CheckMetaRefresh: true
-FileExtension: ".php, .html"
-CheckExternal: true

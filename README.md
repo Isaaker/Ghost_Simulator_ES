@@ -3,11 +3,10 @@
 
 ## Status:
 
-| Action | Status | Run on: |
+| Category | Status | Run on: |
 | -- | -- | -- |
-|Semgrep (Security)|[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)| Commit and Pull Request|
-
-[![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)
+|Security|[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)| Commit and Pull Request|
+|Update Remote Server|[![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)|Disabled|
 
 
 ## Register on the site

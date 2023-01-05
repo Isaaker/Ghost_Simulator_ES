@@ -3,7 +3,9 @@
 
 ## Status:
 
-[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)
+| Action | Status | Run on: |
+| -- | -- | -- |
+|Semgrep (Security)|[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)| Commit and Pull Request|
 
 [![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)
 

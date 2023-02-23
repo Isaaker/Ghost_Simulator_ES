@@ -1,5 +1,5 @@
 name: Blank Issue
-description: Create New Blank Issue
+description: Create New Blank Issue without labels
 title: "[New Issue]: "
 body:
   - type: input

@@ -6,7 +6,7 @@
 | Category | Status | Run on: |
 | -- | -- | -- |
 |Security|[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)| Commit and Pull Request|
-|Update Remote Server|[![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)|Disabled|
+|Update Remote Server|[![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)|Not avaible|
 
 
 ## Register on the site

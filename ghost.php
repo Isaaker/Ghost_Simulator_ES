@@ -15,7 +15,7 @@
 	echo "<br>";
 	echo '<img src="./images/archery.png" width="100%" height=auto>';
 	echo "<hr>";
-	echo "<button> <a href=".">Recargar Fantasma</a> </button>" . "<button> <a href='./ghost.php? '>Resetear Categorías</a> </button>" . "<button> <a href='./ghost.php?personalize=true'>Personalizar Fantasma</a> </button>";
+	echo "<button> <a href=".">Recargar Fantasma</a> </button>" . "<button> <a href='./ghost.php? '>Resetear Categorías</a> </button>";
 	echo "<hr>";
  	//Base de Datos
 
@@ -23,9 +23,6 @@
 	$category = $_GET["category"];
 	$age = $_GET["age"];
 	$sex = $_GET["sex"];
-	$personalize = $_GET["personalize"];
-	$personalize_max = $_GET["personalize_max"];
-	$personalize_min = $_GET["personalize_min"];
 	//Sub15
 
 	//ArcoCompuestoSub15AireLibreHombre
@@ -99,13 +96,6 @@
 
 	//ArcoDesnudoAbsolutoAireLibreMujer
 	$ADAALM = rand(20, 30);
-
-	//Personalize
-	if ($personalize == "true"){
-		echo "<b>Introducir rango de puntuaciones:</b>";
-		echo ""
-		echo "<input type="number" name="personalize_max" />"
-	}
 	//Select
 	echo "<b>Selecciona entre las siguientes opciones:</b>";
 	echo "<br>";

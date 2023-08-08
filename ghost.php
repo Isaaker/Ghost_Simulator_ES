@@ -15,7 +15,7 @@
 	echo "<br>";
 	echo '<img src="./images/archery.png" width="100%" height=auto>';
 	echo "<hr>";
-	echo "<button> <a href=".">Recargar Fantasma</a> </button>" . "<button> <a href='./ghost.php? '>Resetear Categorías</a> </button>";
+	echo "<button> <a href=".">Recargar Fantasma</a> </button>" . "<button> <a href='./ghost.php? '>Resetear Categorías</a> </button>" . "<button> <a href='./ghost.php?personalize=true'>Personalizar Fantasma</a> </button>";
 	echo "<hr>";
  	//Base de Datos
 
@@ -23,6 +23,9 @@
 	$category = $_GET["category"];
 	$age = $_GET["age"];
 	$sex = $_GET["sex"];
+	$personalize = $_GET["personalize"];
+	$personalize_max = $_GET["personalize_max"];
+	$personalize_min = $_GET["personalize_min"];
 	//Sub15
 
 	//ArcoCompuestoSub15AireLibreHombre
@@ -97,7 +100,12 @@
 	//ArcoDesnudoAbsolutoAireLibreMujer
 	$ADAALM = rand(20, 30);
 
-
+	//Personalize
+	if ($personalize == "true"){
+		echo "<b>Introducir rango de puntuaciones:</b>";
+		echo ""
+		echo "<input type="number" name="personalize_max" />"
+	}
 	//Select
 	echo "<b>Selecciona entre las siguientes opciones:</b>";
 	echo "<br>";
@@ -116,7 +124,7 @@
 			echo "<br>";
                		echo "Edad:";
                 	echo "<br>";
-                	echo "<a href='./ghost.php?sex=h&category=c&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=h&category=c&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=h&category=c&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=h&category=c&age=a'>Absoluto</a>";
+                	echo "<button><a href='./ghost.php?sex=h&category=c&age=s15'>Sub 15</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=c&age=s19'>Sub 19</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=c&age=s21'>Sub 21</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=c&age=a'>Absoluto</a></button>";
 			echo "<hr>";
 			if ($age == "s15"){
 			echo "<b>Arco Compuesto Sub 15 Aire Libre Hombre</b>";
@@ -147,7 +155,7 @@
 			echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=h&category=o&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=h&category=o&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=h&category=o&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=h&category=o&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=h&category=o&age=s15'>Sub 15</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=o&age=s19'>Sub 19</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=o&age=s21'>Sub 21</a></button>" . " " . "<button><a href='./ghost.php?sex=h&category=o&age=a'>Absoluto</a></button>";
                         echo "<hr>";
                 	if ($age == "s15"){
                 	echo "<b>Arco Olímpico Sub 15 Aire Libre Hombre</b>";
@@ -179,7 +187,7 @@
                         echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=h&category=i&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=h&category=i&age=a'>Absoluto</a></button>";
                         echo "<hr>";
 
                         if ($age == "a"){
@@ -194,7 +202,7 @@
                         echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=h&category=lb&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=h&category=lb&age=a'>Absoluto</a></button>";
                         echo "<hr>";
 
                         if ($age == "a"){
@@ -209,7 +217,7 @@
                         echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=h&category=d&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=h&category=d&age=a'>Absoluto</a></button>";
                         echo "<hr>";
 
                         if ($age == "a"){
@@ -224,13 +232,13 @@
 		echo "<br>";
 		echo "Categoría:";
 		echo "<br>";
-		echo "<a href='./ghost.php?sex=m&category=c'>Compuesto</a>" . " " . "<a href='./ghost.php?sex=m&category=o'>Olímpico</a>" . " " . "<a href='./ghost.php?sex=m&category=i'>Instintivo</a>" . " " . "<a href='./ghost.php?sex=m&category=lb'>Long Bow</a>" . " " . "<a href='./ghost.php?sex=m&category=d'>Desnudo</a>";
+		echo "<button><a href='./ghost.php?sex=m&category=c'>Compuesto</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=o'>Olímpico</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=i'>Instintivo</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=lb'>Long Bow</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=d'>Desnudo</a></button>";
 		//Compuesto
 		if ($category == "c"){
 			echo "<br>";
                		echo "Edad:";
                 	echo "<br>";
-                	echo "<a href='./ghost.php?sex=m&category=c&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=m&category=c&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=m&category=c&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=m&category=c&age=a'>Absoluto</a>";
+                	echo "<button><a href='./ghost.php?sex=m&category=c&age=s15'>Sub 15</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=c&age=s19'>Sub 19</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=c&age=s21'>Sub 21</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=c&age=a'>Absoluto</a></button>";
 			echo "<hr>";
 			if ($age == "s15"){
 			echo "<b>Arco Compuesto Sub 15 Aire Libre Mujer</b>";
@@ -261,7 +269,7 @@
 			echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=m&category=o&age=s15'>Sub 15</a>" . " " . "<a href='./ghost.php?sex=m&category=o&age=s19'>Sub 19</a>" . " " . "<a href='./ghost.php?sex=m&category=o&age=s21'>Sub 21</a>" . " " . "<a href='./ghost.php?sex=m&category=o&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=m&category=o&age=s15'>Sub 15</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=o&age=s19'>Sub 19</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=o&age=s21'>Sub 21</a></button>" . " " . "<button><a href='./ghost.php?sex=m&category=o&age=a'>Absoluto</a></button>";
                         echo "<hr>";
                 	if ($age == "s15"){
                 	echo "<b>Arco Olímpico Sub 15 Aire Libre Mujer</b>";
@@ -293,7 +301,7 @@
                         echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=h&category=i&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=h&category=i&age=a'>Absoluto</a></button>";
                         echo "<hr>";
 
                         if ($age == "a"){
@@ -308,7 +316,7 @@
                         echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=m&category=lb&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=m&category=lb&age=a'>Absoluto</a></button>";
                         echo "<hr>";
 
                         if ($age == "a"){
@@ -323,7 +331,7 @@
                         echo "<br>";
                         echo "Edad:";
                         echo "<br>";
-                        echo "<a href='./ghost.php?sex=m&category=d&age=a'>Absoluto</a>";
+                        echo "<button><a href='./ghost.php?sex=m&category=d&age=a'>Absoluto</a></button>";
                         echo "<hr>";
 
                         if ($age == "a"){

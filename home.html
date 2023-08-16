@@ -15,7 +15,7 @@
 
 <!--- Check JavaScript --->
 <noscript>
-	<meta http-equiv="refresh" content="0;URL='./javascript_disabled.html'" />    
+	<meta http-equiv="refresh" content="0;URL='./javascript_disabled.html'" />
 </noscript>
 
 <!--- CSS Style --->
@@ -52,8 +52,10 @@
 
 		  // Check the value of the points fields
 
+			//Qualifiers
+
 			//Compound
-		  if (type === "qualifiers" && modality === "compound") {
+		  if (type === "qualifiers" && "modality" === "compound") {
 				if (max_points > 151 || min_points < 0 || min_points >= max_points) {
 			    alert("Los puntos introduciodos son incompatibles");
 		      return;
@@ -67,6 +69,12 @@
 		      return;
 		    }
 		  }
+
+			//Competition
+
+			
+
+
 
 		  // Check if the two fields contain only numbers
 		  if (!/^[0-9]+$/.test(max_points) || !/^[0-9]+$/.test(min_points)) {

@@ -26,6 +26,7 @@
 
 <main>
 	<body>
+		<a href="./about.html">Acerca de...</a>
 
 		<br>
 		<!--- Web Page Banner --->
@@ -39,10 +40,10 @@
 		  // Get the values of the two input fields
 		  var max_points = document.getElementById("max_points").value;
 		  var min_points = document.getElementById("min_points").value;
-		  var type = document.getElementById("type").value;
-		  var location = document.getElementById("location").value;
-			var modality = document.getElementById("modality").value;
-			var competition_split = document.getElementById("competition_split").value;
+			var location = document.querySelector('input[name="simulation_location"]:checked').value;
+			var type = document.querySelector('input[name="simulation_type"]:checked').value;
+			var modality = document.querySelector('input[name="modality"]:checked').value;
+
 
 		  // Check if the two fields are empty
 		  if (max_points === "" || min_points === "") {
@@ -55,25 +56,28 @@
 			//Qualifiers
 
 			//Compound
-		  if (type === "qualifiers" && "modality" === "compound") {
-				if (max_points > 151 || min_points < 0 || min_points >= max_points) {
+		  if (type === "qualifiers") {
+				if (max_points > 31 || min_points < 0 || min_points >= max_points) {
 			    alert("Los puntos introduciodos son incompatibles");
 		      return;
 		    }
 			}
 
-			//Others
-			if (type === "qualifiers" && "modality" === "other") {
-				if (max_points > 2 || min_points < -1 || min_points >= max_points) {
+			//Competition
+
+			if (type === "competition" && location === "indoor") {
+				if (max_points > 31 || min_points < 0 || min_points >= max_points) {
+			    alert("Los puntos introduciodos no son validos");
+		      return;
+		    }
+			}
+
+			if (type === "competition" && location === "outdoor") {
+				if (max_points > 61 || min_points < 0 || min_points >= max_points) {
 			    alert("Los puntos introduciodos son incompatibles");
 		      return;
 		    }
-		  }
-
-			//Competition
-
-			
-
+			}
 
 
 		  // Check if the two fields contain only numbers
@@ -82,13 +86,16 @@
 		    return;
 		  }
 
-			if (competition_split === "true"){
-				// Build the URL to pass the arguments to the PHP page
-			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&competition_split=" + competition_split;
-			}
-			else{
-			  // Build the URL to pass the arguments to the PHP page
-			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location;
+
+      //Build the URL
+
+			try{
+				var competition_split = document.querySelector('input[name="competition_split"]:checked').value;
+				// Build the URL to pass the arguments to the PHP page with competition_split
+			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&modality=" + modality + "&competition_split=" + competition_split;
+			}catch (error) {
+				// Build the URL to pass the arguments to the PHP page without competition_split
+			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&modality=" + modality;
 			}
 
 		  // Redirect to the PHP page
@@ -127,7 +134,7 @@
 		    <input type="text" placeholder="Puntos Minimos" id="min_points" class="input">
 			</div>
 
-		</div> <b>Los puntos máximos dependeran de la modalidad seleccionada</b>
+		</div> <b>Los puntos máximos son por entrada</b>
 
 		<!--- Simulation modality --->
 
@@ -138,12 +145,12 @@
 			<a class="required-text">*</a>
 			<div class="radio-inputs">
 			  <label class="radio">
-			    <input type="radio" name="modality" checked="" id="modality" value="compound">
+			    <input type="radio" name="modality" checked="" value="compound">
 			    <span class="name">Compuesto</span>
 			  </label>
 
 			  <label class="radio">
-			    <input type="radio" name="modality" checked="" id="modality" value="other">
+			    <input type="radio" name="modality" checked="" value="other">
 			    <span class="name">Olimpico, Tradicional, LongBow o Desnudo</span>
 			  </label>
 			</div>
@@ -158,12 +165,12 @@
 			<a class="required-text">*</a>
 			<div class="radio-inputs">
 			  <label class="radio">
-			    <input type="radio" name="simulation_type" checked="" id="type" value="qualifiers">
+			    <input type="radio" name="simulation_type" checked="" value="qualifiers">
 			    <span class="name">Eliminatorias</span>
 			  </label>
 
 			  <label class="radio">
-			    <input type="radio" name="simulation_type" checked="" id="type" value="competition">
+			    <input type="radio" name="simulation_type" checked="" value="competition">
 			    <span class="name">Competición</span>
 			  </label>
 			</div>
@@ -177,12 +184,12 @@
 			<a class="required-text">*</a>
 			<div class="radio-inputs">
 			  <label class="radio">
-			    <input type="radio" name="simulation_location" checked="" id="location" value="indoor">
+			    <input type="radio" name="simulation_location" checked="" value="indoor">
 			    <span class="name">Interior</span>
 			  </label>
 
 			  <label class="radio">
-			    <input type="radio" name="simulation_location" id="location" value="outdoor">
+			    <input type="radio" name="simulation_location" value="outdoor">
 			    <span class="name">Exterior</span>
 			  </label>
 			</div>
@@ -193,16 +200,15 @@
 		<br>
 		Media Comeptición (Esta función te permite realizar un solo round de la competición)
 		<label class="container">
-			<input type="checkbox" id="competition_split" value="true">
+			<input type="checkbox" name="competition_split" value="true">
 			 <div class="checkmark"></div>
 		</label>
 
 	<br>
 	</body>
 	<footer>
-		<center><a href="https://piscinadeentropia.es">© Isaac Hernán Martí </a></center> Todos los derechos Reservados
-		<br>
-		<div align='center'>Agradecimientos especiales: Antonio J. Hernán Obispo y  Erica Hernán Martí</div>
+		<center><a href="https://piscinadeentropia.es">Creado por: Isaac Hernán Martí </a></center>
+		<center><a href="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt">© CC BY-NC-ND 4.0 </a></center>
 	</footer>
 </main>
 

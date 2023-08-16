@@ -19,7 +19,47 @@ footer {
 	border-top: 1px solid black;
 }
 
+
+/* Start Button */
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background-color: #00FF00;
+  box-shadow: 0 0 25px #00FF00;
+  cursor: pointer;
+  outline: none;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #00FF00,
+              0 0 25px #00FF00,
+              0 0 50px #00FF00,
+              0 0 100px #00FF00;
+}
+
+/* Simulation Error */
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
 /* Simulator Settings */
+
+/* Required text */
+
+.required-text{
+	color: red;
+}
 
 /* Max and Min Text Field */
 .coolinput {

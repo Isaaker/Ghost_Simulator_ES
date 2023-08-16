@@ -1,0 +1,202 @@
+<!doctype html>
+<html
+<head>
+
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<!--- Favicon --->
+<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+<link rel="manifest" href="./images/site.webmanifest">
+<meta name="msapplication-TileColor" content="#fade95">
+<meta name="theme-color" content="#fade95">
+
+<!--- Check JavaScript --->
+<noscript>
+	<meta http-equiv="refresh" content="0;URL='./javascript_disabled.html'" />    
+</noscript>
+
+<!--- CSS Style --->
+<link rel="stylesheet" type="text/css" href="home.css">
+
+<title>Ghost Archery Simulator</title>
+</head>
+
+<main>
+	<body>
+
+		<br>
+		<!--- Web Page Banner --->
+		<img src="./images/archery.png" width="100%" height=auto>
+		<br>
+
+		<!--- URL Variables for PHP --->
+
+		<script>
+		function validateInput(){
+		  // Get the values of the two input fields
+		  var max_points = document.getElementById("max_points").value;
+		  var min_points = document.getElementById("min_points").value;
+		  var type = document.getElementById("type").value;
+		  var location = document.getElementById("location").value;
+			var modality = document.getElementById("modality").value;
+			var competition_split = document.getElementById("competition_split").value;
+
+		  // Check if the two fields are empty
+		  if (max_points === "" || min_points === "") {
+		    alert("Por favor complete todas las opciones obligatorias");
+		    return;
+		  }
+
+		  // Check the value of the points fields
+
+			//Compound
+		  if (type === "qualifiers" && modality === "compound") {
+				if (max_points > 151 || min_points < 0 || min_points >= max_points) {
+			    alert("Los puntos introduciodos son incompatibles");
+		      return;
+		    }
+			}
+
+			//Others
+			if (type === "qualifiers" && "modality" === "other") {
+				if (max_points > 2 || min_points < -1 || min_points >= max_points) {
+			    alert("Los puntos introduciodos son incompatibles");
+		      return;
+		    }
+		  }
+
+		  // Check if the two fields contain only numbers
+		  if (!/^[0-9]+$/.test(max_points) || !/^[0-9]+$/.test(min_points)) {
+		    alert("Por favor introduzca solo numeros en el area de puntos");
+		    return;
+		  }
+
+			if (competition_split === "true"){
+				// Build the URL to pass the arguments to the PHP page
+			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&competition_split=" + competition_split;
+			}
+			else{
+			  // Build the URL to pass the arguments to the PHP page
+			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location;
+			}
+
+		  // Redirect to the PHP page
+		  window.location.href = url;
+		}
+		</script>
+
+
+		<center>
+			<button id="startSimulationBtn" onclick="validateInput()" class="shadow__btn">Empezar Simulación</button>
+		</center>
+
+		<!--- Simulation Settings --->
+
+		<h2>Ajustes del Simulador</h2>
+
+		<a class="required-text">* Las opciones indicadas con un asterisco rojo son obligatorias</a>
+
+		<br>
+
+		<!--- Max and Min points --->
+
+		<h4>Puntos<h4>
+
+		<div class="aling-container">
+
+			<a class="required-text">*</a>
+			<div class="coolinput">
+		    <label for="input" class="text">Max:</label>
+		    <input type="text" placeholder="Puntos Máximos" id="max_points" class="input">
+			</div>
+
+			<a class="required-text">*</a>
+			<div class="coolinput">
+		    <label for="input" class="text">Min:</label>
+		    <input type="text" placeholder="Puntos Minimos" id="min_points" class="input">
+			</div>
+
+		</div> <b>Los puntos máximos dependeran de la modalidad seleccionada</b>
+
+		<!--- Simulation modality --->
+
+		<h4>Modalidad<h4>
+
+		<div class="aling-container">
+
+			<a class="required-text">*</a>
+			<div class="radio-inputs">
+			  <label class="radio">
+			    <input type="radio" name="modality" checked="" id="modality" value="compound">
+			    <span class="name">Compuesto</span>
+			  </label>
+
+			  <label class="radio">
+			    <input type="radio" name="modality" checked="" id="modality" value="other">
+			    <span class="name">Olimpico, Tradicional, LongBow o Desnudo</span>
+			  </label>
+			</div>
+		</div>
+
+		<!--- Simulation type --->
+
+		<h4>Tipo<h4>
+
+		<div class="aling-container">
+
+			<a class="required-text">*</a>
+			<div class="radio-inputs">
+			  <label class="radio">
+			    <input type="radio" name="simulation_type" checked="" id="type" value="qualifiers">
+			    <span class="name">Eliminatorias</span>
+			  </label>
+
+			  <label class="radio">
+			    <input type="radio" name="simulation_type" checked="" id="type" value="competition">
+			    <span class="name">Competición</span>
+			  </label>
+			</div>
+		</div>
+
+		<!--- Simulation location --->
+		<h4>Localización<h4>
+
+		<div class="aling-container">
+
+			<a class="required-text">*</a>
+			<div class="radio-inputs">
+			  <label class="radio">
+			    <input type="radio" name="simulation_location" checked="" id="location" value="indoor">
+			    <span class="name">Interior</span>
+			  </label>
+
+			  <label class="radio">
+			    <input type="radio" name="simulation_location" id="location" value="outdoor">
+			    <span class="name">Exterior</span>
+			  </label>
+			</div>
+		</div>
+
+		<h4>Avanzado<h4>
+		<a class="required-text">Funciones no disponibles actualmente</a>
+		<br>
+		Media Comeptición (Esta función te permite realizar un solo round de la competición)
+		<label class="container">
+			<input type="checkbox" id="competition_split" value="true">
+			 <div class="checkmark"></div>
+		</label>
+
+	<br>
+	</body>
+	<footer>
+		<center><a href="https://piscinadeentropia.es">© Isaac Hernán Martí </a></center> Todos los derechos Reservados
+		<br>
+		<div align='center'>Agradecimientos especiales: Antonio J. Hernán Obispo y  Erica Hernán Martí</div>
+	</footer>
+</main>
+
+
+</html>

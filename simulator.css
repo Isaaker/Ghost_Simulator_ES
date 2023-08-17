@@ -58,25 +58,29 @@ footer {
 
 .simulation_form {
   margin: 100px auto;
-	width: 800px;
+	width: auto;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
 	font-family: "Century Gothic";
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   background-color: white;
+	align-items: center;
+	text-align: center;
 }
 
 .simulation_form .header {
   font-size: 24px;
   font-weight: bold;
+	text-align: center;
 }
 
 .simulation_form .body {
   font-size: 14px;
   line-height: 1.5;
+	text-align: center;
 }
 
 /* Data div */
@@ -87,12 +91,14 @@ footer {
   background-color: white;
 	height: auto;
 	width: auto;
+	align-items: center;
 }
 
 
 td{
 	line-height: 200%;
 	padding: 0 60px;
+	text-align: center;
 }
 
 th{
@@ -100,6 +106,7 @@ th{
 	padding: 0 60px;
 	font-size: 24px;
   font-weight: bold;
+	text-align: center;
 }
 
 /* Next Button */

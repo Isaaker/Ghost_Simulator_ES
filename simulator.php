@@ -2,6 +2,9 @@
 <html
 <head>
 
+<!--- Responsive Platform --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
 
@@ -26,6 +29,26 @@
 
 <main>
 	<body>
+
+		<!--- Check Browser compatibility --->
+
+		<?php
+			// Get the user agent string.
+			$user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+			// Check if the user agent string matches any of the unsupported browsers or platforms.
+			if (preg_match('/(Internet Explorer 9|Safari 5\.1|Opera 12|Firefox 20|ELINKS|Lynx|w3m)/i', $user_agent)) {
+
+			    // Redirect to a page that tells the user that their browser is not supported.
+			    header('Location: ./browser_not_supported.html');
+
+			    exit;
+
+			}
+			?>
+
+
+
 		<!--- Check PHP URL Arguments --->
 		<?php
 
@@ -210,54 +233,67 @@
 			$Ghost_R2 = rand($min_points, $max_points);
 			$Ghost_R3 = rand($min_points, $max_points);
 
+
+
 			?>
 
-      <table style="simulator_table" id="ghost_table">
-         <center>
-           <h1>Ghost</h1>
-         </center>
-         <tr>
-           <th>Entrada</th>
-           <th>Total</th>
-         </tr>
-				 <tr>
-			     <td><?php echo $Ghost_R1; ?></td>
-				   <td><?php echo $Ghost_R1; ?></td>
-				 </tr>
-			   <tr>
-				   <td hidden id="Row2"><?php echo $Ghost_R2; ?></td>
-				   <td hidden id="Row2_total"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
-				 </tr>
-		 	   <tr>
-				   <td hidden id="Row3"><?php echo $Ghost_R3; ?></td>
-			     <td hidden id="Row3_total"><?php echo $Ghost_R1 + $Ghost_R2 + $Ghost_R3; ?></td>
-		 	   </tr>
-      </table>
+			<center>
+	      <table class="simulator_table" id="ghost_table">
+	         <center>
+	           <h1>Ghost</h1>
+						 <br>
+						 <h1>Usted</h1>
+	         </center>
+	         <tr>
+	           <th>Entrada</th>
+	           <th>Total</th>
+						 <th>Entrada</th>
+						 <th>Total</th>
+	         </tr>
+					 <tr>
+				     <td><?php echo $Ghost_R1; ?></td>
+					   <td><?php echo $Ghost_R1; ?></td>
+					 </tr>
+				   <tr>
+						 <td hidden id="Row2"><?php echo $Ghost_R2; ?></td>
+						 <td hidden id="Row2_total"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
+					 </tr>
+			 	   <tr>
+						 <td hidden id="Row3"><?php echo $Ghost_R3; ?></td>
+				     <td hidden id="Row3_total"><?php echo $Ghost_R1 + $Ghost_R2 + $Ghost_R3; ?></td>
+			 	   </tr>
+	      </table>
+		  </center>
 
 
 			<!--- Make table data visible --->
 
 			<br>
-
 			<center>
 				<button class="shadow__btn" id="hideButton">Siguiente</button>
 			</center>
 
 			<script>
-			  const hideButton = document.getElementById('hideButton');
-			  let current_row = 2;
-			  let row_id;
-			  let row_total_id;
+			const hideButton = document.getElementById('hideButton');
+			const rows = [null, 'Row2', 'Row3', 'Row4', 'Row5', 'Row6', 'Row7', 'Row8', 'Row9', 'Row10'];
 
-			  hideButton.addEventListener('click', function() {
-			    row_id = document.getElementById('Row' + current_row);
-			    row_total_id = document.getElementById('Row' + current_row + '_total');
+			let current_row = 1;
 
-			    row_id.style.display = 'block';
-			    row_total_id.style.display = 'block';
+			hideButton.addEventListener('click', function() {
+				if (current_row <= 3) {
+					const row_id = document.getElementById(rows[current_row]);
+					const row_total_id = document.getElementById(rows[current_row] + '_total');
 
-			    current_row += 1;
-			  });
+					row_id.style.display = 'table-row';
+					row_total_id.style.display = 'table-cell';
+
+					current_row += 1;
+				}
+
+				if (current_row > 3) {
+					hideButton.style.display = 'hidden';
+				}
+			});
 			</script>
 
     </div>

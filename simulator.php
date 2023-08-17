@@ -26,87 +26,112 @@
 
 <main>
 	<body>
+		<!--- Check PHP URL Arguments --->
+		<?php
 
-    <script>
-    function checkArguments() {
-        // Get the query string from the URL
-        const queryString = window.location.search;
+		try {
+			// Get the values of the variables from the GET request
+			$max_points = $_GET["max_points"];
+			$min_points = $_GET["min_points"];
+			$type = $_GET["type"];
+			$location = $_GET["location"];
+			$modality = $_GET["modality"];
 
-        // Split the query string into an object
-        for (const [key, value] of queryString.split('&').map(entry => entry.split('='))) {
-        if (key === '') {
-          queryObject.first_argument = value;
-        } else {
-          queryObject[key] = value;
-        }
+			// Validate that all the variables are present
+			if (!isset($max_points)) {
+				throw new Exception("The value of the max_points variable could not be obtained.");
+			}
 
-        // Check if the required arguments are present in the query string
-        if (!queryObject.hasOwnProperty('max_points') || !queryObject.hasOwnProperty('min_points') || !queryObject.hasOwnProperty('type') || !queryObject.hasOwnProperty('location') || !queryObject.hasOwnProperty('modality')) {
-          // If the required arguments are not present, show an alert and redirect to the home page
-          alert('La configuracion del simulador no se realizo correctamente, ERROR: Arguments required max_points, min_points, location, type y modality.');
-          window.location.href = './home.html';
-          return;
-        }
+			if (!isset($min_points)) {
+				throw new Exception("The value of the min_points variable could not be obtained.");
+			}
 
-        // Check if the max_points and min_points arguments are numbers
-        if (!isNaN(queryObject.max_points) && !isNaN(queryObject.min_points)) {
-          // The max_points and min_points arguments are numbers
-        } else {
-          // The max_points and min_points arguments are not numbers
-          alert('No se completo la configuracion de puntos correctamente, ERROR: The max_points and min_points argument must be either numbers');
-          window.location.href = './home.html';
-          return;
-        }
+			if (!isset($type)) {
+				throw new Exception("The value of the type variable could not be obtained.");
+			}
 
-        // Check if the location argument is indoor or outdoor
-        if (queryObject.location === 'indoor' || queryObject.location === 'outdoor') {
-          // The location argument is valid
-        } else {
-          // The location argument is not valid
-          alert('No se completo la configuracion de localizacion correctamente, ERROR: The location argument must be either outdoor or indoor');
-          window.location.href = './home.html';
-          return;
-        }
+			if (!isset($location)) {
+				throw new Exception("The value of the location variable could not be obtained.");
+			}
 
-        // Check if the type argument is competitions or qualifiers
-        if (queryObject.type === 'competitions' || queryObject.type === 'qualifiers') {
-          // The type argument is valid
-        } else {
-          // The type argument is not valid
-          alert('No se completo la configuracion de localizacion correctamente, ERROR: The type argument must be either competition or qualifiers');
-          window.location.href = './home.html';
-          return;
-        }
+			if (!isset($modality)) {
+				throw new Exception("The value of the modality variable could not be obtained.");
+			}
 
-        // Check if the modality argument is other or compound
-        if (queryObject.modality === 'other' || queryObject.modality === 'compound') {
-          // The modality argument is valid
-        } else {
-          // The modality argument is not valid
-          alert('No se completo la configuracion de localizacion correctamente, ERROR: The modality argument must be either other or compound');
-          window.location.href = './home.html';
-          return;
-        }
+			//Check that all variables meet the requirements
 
-        // Check if the competition_split argument is true
-        if (queryObject.competition_split === 'true') {
-          // The competition_split argument is valid
-        } else {
-          // The competition_split argument is not valid
-          alert('No se completo la configuracion correctamente, ERROR: The competition split argument should only be included in the URL if it has the value true');
-          window.location.href = './home.hmtl';
-          return;
-        }
+			if (filter_var($max_points, FILTER_VALIDATE_INT) == false) {
+				throw new Exception("The value of the max_points variable needs to be a Int.");
+			}
 
-        // All the arguments are valid
-        return true;
-      }
-    }
+			if (filter_var($min_points, FILTER_VALIDATE_INT) == false) {
+				if ($min_points != 0){
+					throw new Exception("The value of the max_points variable needs to be a Int.");
+				}		
+			}
 
-    // Call the checkArguments function when the page loads
-    window.onload = checkArguments;
-    </script>
+			if ($min_points < 0){
+				throw new Exception("The value of the max_points and the type value are incompatible");
+			}
 
+			if ( $max_points <= $min_points){
+				throw new Exception("The value of the max_points needs to be bigger than min_points");
+			}
+
+			if ( $type != "qualifiers"){
+				if ( $type != "competition"){
+					throw new Exception("The value of the type variable needs to be qualifiers or competition");
+				}
+			}
+
+			if ($type == "qualifiers"){
+				if ($max_points > 30){
+					throw new Exception("The value of the max_points and the type value are incompatible");
+				}
+			}
+
+			if ( $location != "indoor"){
+				if ( $type != "outdoor"){
+					throw new Exception("The value of the type variable needs to be indoor or outdoor");
+				}
+			}
+
+			if ($location == "indoor"){
+				if ($max_points > 30){
+					throw new Exception("The value of the max_points and the type & location value are incompatible");
+				}
+			}
+
+			if ($location == "outdoor"){
+				if ($type == "competition"){
+					if ($max_points > 60){
+						throw new Exception("The value of the max_points and the type & location value are incompatible");
+					}
+				}
+			}
+
+			if ( $modality != "compound"){
+				if ( $modality != "other"){
+					throw new Exception("The value of the type variable needs to be compound or other");
+				}
+			}
+
+
+			} catch (Exception $e) {
+			// Display an error message and redirect the user to the home page
+			echo '
+			<div class="simulation_form">
+				<h1>Error</h1>
+				<p>La configuración no se ha realizado correctamente, pulse le botón a continuación para volver a la página de configuración.</p>
+				<br>
+				<p>ERROR: ' . $e . '<p>
+				<a href="./"><button>Volver a la configuración</button></a>
+			</div>
+			';
+			die();
+		}
+
+		?>
 
     <a href="./" ><button>🏠 Home</button></a>
 
@@ -167,12 +192,17 @@
 
       <hr>
       <!--- Simulator PHP Area --->
-
       <?php
+			$max_points = $_GET["max_points"];
+			$min_points = $_GET["min_points"];
 
-
+			$type = $_GET["type"];
+			$location = $_GET["location"];
+			$modality = $_GET["modality"];
 
       // Ghost Data Display
+
+
       echo '
       <table style="simulator_table" id="ghost_table">
          <center>
@@ -183,68 +213,44 @@
            <th>Total</th>
          </tr>
          <tr>
-           <td>Celda 1</td>
+           <td>' . rand($min_points, $max_points) . '</td>
            <td>Celda 2</td>
          </tr>
          <tr>
-           <td>Celda 3</td>
-           <td>Celda 4</td>
+           <td hidden>Celda 3</td>
+           <td hidden>Celda 4</td>
          </tr>
       </table>
       ';
 
-      
       ?>
 
+			<br>
+			<br>
+			<center>
+				<button class="shadow__btn" id="next_button">Siguiente</button>
+			</center>
+
+			<!--- Random Number Generator --->
+
+			<script>
+			function getRndInteger(min, max) {
+			  return Math.floor(Math.random() * (max - min)) + min;
+			}
+			</script>
 
       <!--- Control Table --->
       <script>
       // This function will add a line to the two tables
       function addLine() {
-        // Get the first table
-        var ghost_table = document.getElementById("ghost_table");
 
-        // Create a new row
-        var row = document.createElement("tr");
-
-        // Add two cells to the row
-        var cell1 = document.createElement("td");
-        var cell2 = document.createElement("td");
-
-        // Set the text content of the cells
-        cell1.textContent = "New line 1";
-        cell2.textContent = "New line 2";
-
-        // Add the row to the table
-        row.appendChild(cell1);
-        row.appendChild(cell2);
-
-        ghost_table.appendChild(row);
-
-        // Get the second table
-        var user_table = document.getElementById("user_table");
-
-        // Create a new row
-        var row = document.createElement("tr");
-
-        // Add two cells to the row
-        var cell1 = document.createElement("td");
-        var cell2 = document.createElement("td");
-
-        // Set the text content of the cells
-        cell1.textContent = "New line 1";
-        cell2.textContent = "New line 2";
-
-        // Add the row to the table
-        row.appendChild(cell1);
-        row.appendChild(cell2);
-
-        ghost_table.appendChild(row);
       }
 
       // Add an event listener to the "addButton" button
       document.getElementById("next_button").addEventListener("click", addLine);
       </script>
+
+
     </div>
 	  <br>
 	</body>

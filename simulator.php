@@ -19,7 +19,7 @@
 </noscript>
 
 <!--- CSS Style --->
-<link rel="stylesheet" type="text/css" href="simulator.css">
+<link rel="stylesheet" type="text/css" href="./simulator.css">
 
 <title>Ghost Archery Simulator</title>
 </head>
@@ -67,7 +67,7 @@
 			if (filter_var($min_points, FILTER_VALIDATE_INT) == false) {
 				if ($min_points != 0){
 					throw new Exception("The value of the max_points variable needs to be a Int.");
-				}		
+				}
 			}
 
 			if ($min_points < 0){
@@ -202,8 +202,16 @@
 
       // Ghost Data Display
 
+			//Table Data Storage
 
-      echo '
+			//Ghost
+
+			$Ghost_R1 = rand($min_points, $max_points);
+			$Ghost_R2 = rand($min_points, $max_points);
+			$Ghost_R3 = rand($min_points, $max_points);
+
+			?>
+
       <table style="simulator_table" id="ghost_table">
          <center>
            <h1>Ghost</h1>
@@ -212,44 +220,45 @@
            <th>Entrada</th>
            <th>Total</th>
          </tr>
-         <tr>
-           <td>' . rand($min_points, $max_points) . '</td>
-           <td>Celda 2</td>
-         </tr>
-         <tr>
-           <td hidden>Celda 3</td>
-           <td hidden>Celda 4</td>
-         </tr>
+				 <tr>
+			     <td><?php echo $Ghost_R1; ?></td>
+				   <td><?php echo $Ghost_R1; ?></td>
+				 </tr>
+			   <tr>
+				   <td hidden id="Row2"><?php echo $Ghost_R2; ?></td>
+				   <td hidden id="Row2_total"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
+				 </tr>
+		 	   <tr>
+				   <td hidden id="Row3"><?php echo $Ghost_R3; ?></td>
+			     <td hidden id="Row3_total"><?php echo $Ghost_R1 + $Ghost_R2 + $Ghost_R3; ?></td>
+		 	   </tr>
       </table>
-      ';
 
-      ?>
+
+			<!--- Make table data visible --->
 
 			<br>
-			<br>
+
 			<center>
-				<button class="shadow__btn" id="next_button">Siguiente</button>
+				<button class="shadow__btn" id="hideButton">Siguiente</button>
 			</center>
 
-			<!--- Random Number Generator --->
-
 			<script>
-			function getRndInteger(min, max) {
-			  return Math.floor(Math.random() * (max - min)) + min;
-			}
+			  const hideButton = document.getElementById('hideButton');
+			  let current_row = 2;
+			  let row_id;
+			  let row_total_id;
+
+			  hideButton.addEventListener('click', function() {
+			    row_id = document.getElementById('Row' + current_row);
+			    row_total_id = document.getElementById('Row' + current_row + '_total');
+
+			    row_id.style.display = 'block';
+			    row_total_id.style.display = 'block';
+
+			    current_row += 1;
+			  });
 			</script>
-
-      <!--- Control Table --->
-      <script>
-      // This function will add a line to the two tables
-      function addLine() {
-
-      }
-
-      // Add an event listener to the "addButton" button
-      document.getElementById("next_button").addEventListener("click", addLine);
-      </script>
-
 
     </div>
 	  <br>

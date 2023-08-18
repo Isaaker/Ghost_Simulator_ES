@@ -30,26 +30,6 @@
 <main>
 	<body>
 
-
-		<!--- Check Browser compatibility --->
-
-		<?php
-
-		// Get the user agent string.
-		$user_agent = $_SERVER['HTTP_USER_AGENT'];
-
-		// Check if the user agent string matches any of the unsupported browsers or platforms.
-		if (preg_match('/(Internet Explorer 9|Safari 13\.1\.2|Opera 12|Firefox 20|ELINKS|Lynx|w3m)/i', $user_agent)) {
-
-		    // Redirect to a page that tells the user that their browser is not supported.
-		    header('Location: incompatible-browser.php');
-
-		    exit;
-
-		}
-		?>
-
-
 		<a href="./about.html"><button>ℹ️ Acerca de...</button></a>
 
 		<br>

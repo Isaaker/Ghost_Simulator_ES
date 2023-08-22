@@ -215,9 +215,8 @@
 			$Ghost_R3 = rand($min_points, $max_points);
 	 ?>
 
-	 //Users
-
 	 <?php
+	 	//Users
 		$Users_R1 = $_POST['Users_R1'];
 		$Users_R2 = $_POST['Users_R2'];
     	$Users_R3 = $_POST['Users_R3'];
@@ -237,7 +236,7 @@
 					<tr>
 				    	<td><?php echo $Ghost_R1; ?></td>
 						<td><?php echo $Ghost_R1; ?></td>
-						<td><input type="text" name="Users_R1" /></td>
+						<td></td>
 						<td><?php echo $Ghost_R1_user; ?></td>
 						<td><?php echo $Users_R1; ?></td>
 						<td><input type="submit" value="Enviar" /></td>

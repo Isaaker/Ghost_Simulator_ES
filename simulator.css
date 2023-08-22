@@ -1,0 +1,136 @@
+body {
+	background-color: #fade95;
+	font-family: "Century Gothic";
+	color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+	background-color: #fade95;
+	font-family: "Century Gothic";
+	color: black;
+  padding: 20px;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	border-top: 1px solid black;
+}
+
+
+/* Finish Button */
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background-color: #00FF00;
+  box-shadow: 0 0 25px #00FF00;
+  cursor: pointer;
+  outline: none;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #00FF00,
+              0 0 25px #00FF00,
+              0 0 50px #00FF00,
+              0 0 100px #00FF00;
+}
+
+/* Issue Message */
+
+.issue_message{
+	font-family: "Century Gothic";
+	color: green;
+	padding: 14px;
+}
+
+/* Simulation Form */
+
+.simulation_form {
+  margin: 100px auto;
+	width: auto;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+	font-family: "Century Gothic";
+  font-size: 20px;
+  color: #333;
+  background-color: white;
+	align-items: center;
+	text-align: center;
+}
+
+.simulation_form .header {
+  font-size: 24px;
+  font-weight: bold;
+	text-align: center;
+}
+
+.simulation_form .body {
+  font-size: 14px;
+  line-height: 1.5;
+	text-align: center;
+}
+
+/* Data div */
+
+.simulator_table {
+	font-family: "Century Gothic";
+	color: black;
+  background-color: white;
+	height: auto;
+	width: auto;
+	align-items: center;
+}
+
+
+td{
+	line-height: 200%;
+	padding: 0 60px;
+	text-align: center;
+}
+
+th{
+	line-height: 200%;
+	padding: 0 60px;
+	font-size: 24px;
+  font-weight: bold;
+	text-align: center;
+}
+
+/* Next Button */
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background-color: #00FF00;
+  box-shadow: 0 0 25px #00FF00;
+  cursor: pointer;
+  outline: none;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #00FF00,
+              0 0 25px #00FF00,
+              0 0 50px #00FF00,
+              0 0 100px #00FF00;
+}

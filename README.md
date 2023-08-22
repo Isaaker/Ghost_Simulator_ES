@@ -15,9 +15,19 @@ To register on the site [click here](https://forms.gle/GxU8BVdvJi37yJMN8)
 
 ## About the project
 
-This open source project, is to generate random scores in heats that would be done so to speak the "ghost" and try to beat them.
+This is an open source project initiated by @Isaaker with the goal of creating a web application to generate scores that will be helpful for archery training.
 
-The code is written in PHP and has a fairly simple structure, the data that are implemented in the project are in the Data folder in CSV format.
+The reason why it is called Ghost Simulator, is that in archery we call these trainings "shooting against the ghost" since this training consists in trying to beat the scores of the ghost
+
+## Libraries, Frameworks and other Technologies
+
+The following technologies have been used in this project:
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML 5 Logo" width=50 height=50/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Logo" width=50 height=50/>          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo" width=50 height=50/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript Logo" width=50 height=50/>
+          
+
+
+                    
 
 ## License
 

@@ -2,7 +2,7 @@
 
 # Condiciones de uso de Archery Ghost Simulator
 
-**Versión 2.0 - 22/09/23**
+**Versión 2.1 - 22/08/23**
 
 ## 1. Introducción
 
@@ -26,6 +26,7 @@ En estas condiciones, los siguientes términos tendrán los siguientes significa
 
 El uso de la plataforma está sujeto a las siguientes condiciones:
 
+* El usuario acepta las condiciones de uso del código, que se pueden encontrar en https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt.
 * El contenido de la plataforma se presenta "tal cual" y sin ninguna garantía.
 * El gestor de la plataforma se reserva el derecho de cambiar estas condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en la plataforma.
 * El gestor de la plataforma no se hace responsable de los daños o perjuicios que puedan surgir del uso de la plataforma, incluyendo, pero sin limitarse a, daños por pérdida de datos, lucro cesante o daños morales.
@@ -61,17 +62,19 @@ El acceso a Ghost Archery Simulator mediante las credenciales del usuario puede 
 
 ## 9. Política de privacidad
 
-Ghost Archery Simulator recopila datos de los usuarios únicamente con fines de seguridad.
+* Ghost Archery Simulator recopila datos de los usuarios únicamente con fines de seguridad.
 
-Ghost Archery Simulator no comparte los datos de los usuarios con ninguna otra persona.
+* Ghost Archery Simulator no comparte los datos de los usuarios con ninguna otra persona.
 
-Los datos de los usuarios pueden ser conservados de forma temporal (por ejemplo, IPs) o de forma permanente (por ejemplo, correos electrónicos, número de licencia).
+* Los datos de los usuarios pueden ser conservados de forma temporal (por ejemplo, IPs) o de forma permanente (por ejemplo, correos electrónicos, número de licencia).
 
-Para solicitar una copia o el borrado de los datos, puedes dirigirte a la siguiente dirección de correo electrónico: [dirección de correo electrónico].
+Para solicitar una copia o el borrado de los datos, puedes dirigirte a la siguiente dirección de correo electrónico: archery.ghost.simulator@gmail.com.
 
 ## 10. Cambios en las condiciones de uso
 
 Ghost Archery Simulator se reserva el derecho de cambiar estas condiciones de uso en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en Ghost Archery Simulator.
+
+Cualquier versión anterior de estas condiciones de uso es nula y sin efecto, y se aplicarán en su lugar las condiciones de la versión más reciente de estas condiciones de uso.
 
 ## 11. Contacto
 

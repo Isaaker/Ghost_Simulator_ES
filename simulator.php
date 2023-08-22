@@ -204,7 +204,7 @@
 			$location = $_GET["location"];
 			$modality = $_GET["modality"];
 
-      // Ghost Data Display
+      		// Ghost Data Display
 
 			//Table Data Storage
 
@@ -213,16 +213,17 @@
 			$Ghost_R1 = rand($min_points, $max_points);
 			$Ghost_R2 = rand($min_points, $max_points);
 			$Ghost_R3 = rand($min_points, $max_points);
-			?>
+	 ?>
 
-	  		//Users
-			<?php
-			  $Users_R1 = $_POST['Users_R1'];
-			  $Users_R2 = $_POST['Users_R2'];
-			  $Users_R3 = $_POST['Users_R3'];
-		  	?>
+	 //Users
 
-			<center>
+	 <?php
+		$Users_R1 = $_POST['Users_R1'];
+		$Users_R2 = $_POST['Users_R2'];
+    	$Users_R3 = $_POST['Users_R3'];
+  	 ?>
+
+		<center>
 	      <table class="simulator_table" id="ghost_table">
 	         <center>
 	           <h1>Ghost    User</h1>
@@ -254,7 +255,7 @@
 						<td hidden id="Row3_total_user"><?php echo $Ghost_R1_user + $Ghost_R2_user + $Ghost_R3_user; ?></td>
 					</tr>
 	      </table>
-		  </center>
+		</center>
 
 
 			<!--- Make table data visible --->

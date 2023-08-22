@@ -236,7 +236,7 @@
 					   <td><?php echo $Ghost_R1; ?></td>
 					 </tr>
 				   <tr>
-						 <td hidden id="Row2"><?php echo '<br>' . $Ghost_R2; ?></td>
+						 <td hidden id="Row2"><?php echo '<br> '$Ghost_R2''; ?></td>
 						 <td hidden id="Row2_total"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
 					 </tr>
 			 	   <tr>

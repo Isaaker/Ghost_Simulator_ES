@@ -225,15 +225,12 @@
 			<center>
 	      <table class="simulator_table" id="ghost_table">
 	         <center>
-	           <h1>Ghost | Archery</h1>
+	           <h1>Ghost    User</h1>
 	         </center>
 	         <tr>
-	           <th>Entrada</th>
-			   | 
-	           <th>Total</th>
-			   |
-			   <th>Entrada</th>
-			   |
+	           <th>Entrada | </th>
+	           <th>Total | </th>
+			   <th>Entrada | </th>
 			   <th>Total</th>
 	         </tr>
 					<tr>
@@ -241,6 +238,7 @@
 						<td><?php echo $Ghost_R1; ?></td>
 						<td><input type="text" name="Users_R1" /></td>
 						<td><?php echo $Ghost_R1_user; ?></td>
+						<td><?php echo $Users_R1; ?></td>
 						<td><input type="submit" value="Enviar" /></td>
 					</tr>
 					<tr>

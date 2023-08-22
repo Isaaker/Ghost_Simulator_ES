@@ -98,10 +98,12 @@ footer {
 td{
 	line-height: 200%;
 	text-align: left;
+  padding: auto;
 }
 
 th{
 	line-height: 200%;
+	padding: auto;
 	font-size: 24px;
   font-weight: bold;
 	text-align: left;

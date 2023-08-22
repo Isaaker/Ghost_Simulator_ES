@@ -222,8 +222,6 @@
 	      <table class="simulator_table" id="ghost_table">
 	         <center>
 	           <h1>Ghost</h1>
-						 <br>
-						 <h1>Usted</h1>
 	         </center>
 	         <tr>
 	           <th>Entrada</th>
@@ -236,7 +234,7 @@
 					   <td><?php echo $Ghost_R1; ?></td>
 					 </tr>
 				   <tr>
-						 <td hidden id="Row2"><?php echo '<br>'?><?php echo $Ghost_R2; ?></td>
+						 <td hidden id="Row2"><?php echo $Ghost_R2; ?></td>
 						 <td hidden id="Row2_total"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
 					 </tr>
 			 	   <tr>

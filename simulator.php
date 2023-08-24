@@ -204,7 +204,7 @@
 			$location = $_GET["location"];
 			$modality = $_GET["modality"];
 
-      // Ghost Data Display
+      		// Ghost Data Display
 
 			//Table Data Storage
 
@@ -213,38 +213,48 @@
 			$Ghost_R1 = rand($min_points, $max_points);
 			$Ghost_R2 = rand($min_points, $max_points);
 			$Ghost_R3 = rand($min_points, $max_points);
+	 ?>
 
+	 <?php
+	 	//Users
+		$Users_R1 = $_POST['Users_R1'];
+		$Users_R2 = $_POST['Users_R2'];
+    	$Users_R3 = $_POST['Users_R3'];
+  	 ?>
 
-
-			?>
-
-			<center>
+		<center>
 	      <table class="simulator_table" id="ghost_table">
 	         <center>
-	           <h1>Ghost</h1>
-						 <br>
-						 <h1>Usted</h1>
+	           <h1>Ghost    User</h1>
 	         </center>
 	         <tr>
-	           <th>Entrada</th>
-	           <th>Total</th>
-						 <th>Entrada</th>
-						 <th>Total</th>
+	           <th>Entrada | </th>
+	           <th>Total | </th>
+			   <th>Entrada | </th>
+			   <th>Total</th>
 	         </tr>
-					 <tr>
-				     <td><?php echo $Ghost_R1; ?></td>
-					   <td><?php echo $Ghost_R1; ?></td>
-					 </tr>
-				   <tr>
-						 <td hidden id="Row2"><?php echo $Ghost_R2; ?></td>
-						 <td hidden id="Row2_total"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
-					 </tr>
-			 	   <tr>
-						 <td hidden id="Row3"><?php echo $Ghost_R3; ?></td>
-				     <td hidden id="Row3_total"><?php echo $Ghost_R1 + $Ghost_R2 + $Ghost_R3; ?></td>
-			 	   </tr>
+					<tr>
+				    	<td><?php echo $Ghost_R1; ?></td>
+						<td><?php echo $Ghost_R1; ?></td>
+						<td></td>
+						<td><?php echo $Ghost_R1_user; ?></td>
+						<td><?php echo $Users_R1; ?></td>
+						<td><input type="submit" value="Enviar" /></td>
+					</tr>
+					<tr>
+						<td hidden id="Row2_ghost"><?php echo $Ghost_R1; ?></td>
+						<td hidden id="Row2_total_ghost"><?php echo $Ghost_R1 + $Ghost_R2; ?></td>
+						<td hidden id="Row2_user"></td>
+						<td hidden id="Row2_total_user"><?php echo $Ghost_R1_user + $Ghost_R2_user; ?></td>
+					</tr>
+					<tr>
+						<td hidden id="Row3_ghost"><?php echo $Ghost_R3; ?></td>
+						<td hidden id="Row3_total_ghost"><?php echo $Ghost_R1 + $Ghost_R2 + $Ghost_R3; ?></td>
+						<td hidden id="Row3_user"></td>
+						<td hidden id="Row3_total_user"><?php echo $Ghost_R1_user + $Ghost_R2_user + $Ghost_R3_user; ?></td>
+					</tr>
 	      </table>
-		  </center>
+		</center>
 
 
 			<!--- Make table data visible --->
@@ -257,13 +267,16 @@
 			<script>
 			const hideButton = document.getElementById('hideButton');
 			const rows = [null, 'Row2', 'Row3', 'Row4', 'Row5', 'Row6', 'Row7', 'Row8', 'Row9', 'Row10'];
+			const max_rows = 3
 
 			let current_row = 1;
 
 			hideButton.addEventListener('click', function() {
-				if (current_row <= 3) {
-					const row_id = document.getElementById(rows[current_row]);
-					const row_total_id = document.getElementById(rows[current_row] + '_total');
+				if (current_row <= max_rows) {
+					const row_ghost = document.getElementById(rows[current_row] + '_ghost');
+					const row_total_ghost = document.getElementById(rows[current_row] + '_total_ghost');
+					const row_user = document.getElementById(rows[current_row] + '_user');
+					const row_total_user = document.getElementById(rows[current_row] + '_total_user');
 
 					row_id.style.display = 'table-row';
 					row_total_id.style.display = 'table-cell';
@@ -271,7 +284,7 @@
 					current_row += 1;
 				}
 
-				if (current_row > 3) {
+				if (current_row > max_rows) {
 					hideButton.style.display = 'hidden';
 				}
 			});

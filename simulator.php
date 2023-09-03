@@ -213,7 +213,7 @@
 				</tr>
 				<tr>
 					<td><?php echo $Ghost_R1; ?></td>
-					<td>3425</td>
+					<td><input type="text" placeholder="Puntos" id="Row1_user_input" class="input"></td>
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
@@ -235,27 +235,26 @@
 		</center>
 
 		<script>
-			const hideButton = document.getElementById('hideButton');
-			const rows = [null, 'Row2', 'Row3', 'Row4', 'Row5', 'Row6', 'Row7', 'Row8', 'Row9', 'Row10'];
-			const max_rows = 3
+		const hideButton = document.getElementById('hideButton');
+		const rows = [null, 'Row2', 'Row3', 'Row4', 'Row5', 'Row6', 'Row7', 'Row8', 'Row9', 'Row10'];
+		const max_rows = 3
+		let current_row = 1;
 
-			let current_row = 1;
+		hideButton.addEventListener('click', function() {
+			if (current_row <= max_rows) {
+				const row_ghost = document.getElementById(rows[current_row] + '_ghost');
+				const row_user = document.getElementById(rows[current_row] + '_user');
 
-			hideButton.addEventListener('click', function() {
-				if (current_row <= max_rows) {
-					const row_ghost = document.getElementById(rows[current_row] + '_ghost');
-					const row_user = document.getElementById(rows[current_row] + '_user');
+				row_id.style.display = 'table-row';
+				row_total_id.style.display = 'table-cell';
 
-					row_id.style.display = 'table-row';
-					row_total_id.style.display = 'table-cell';
+				current_row += 1;
+			}
 
-					current_row += 1;
-				}
-
-				if (current_row > max_rows) {
-					hideButton.style.display = 'hidden';
-				}
-			});
+			if (current_row > max_rows) {
+				hideButton.style.display = 'hidden';
+			}
+		});
 		</script>
     </div>
 	<br>

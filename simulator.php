@@ -218,11 +218,11 @@
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
-					<td hidden id="Row2_user"><input type="text" placeholder="Puntos" id="Row2_user_input" class="input"></td>
+					<td hidden id="Row2_user">34</td>
 				</tr>
 				<tr>
 					<td hidden id="Row3_ghost"><?php echo $Ghost_R3; ?></td>
-					<td hidden id="Row3_user"><input type="text" placeholder="Puntos" id="Row3_user_input" class="input"></td>
+					<td hidden id="Row3_user">54<</td>
 				</tr>
 			</table>
 		</center>

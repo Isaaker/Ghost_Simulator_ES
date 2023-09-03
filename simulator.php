@@ -180,7 +180,7 @@
 				echo 'Modalidad: Compuesto';
 			}
 			else{
-				echo 'Modalidad: Olímpico, Tradiciónal, LogBow o Desnudo';
+				echo 'Modalidad: Olímpico, Tradicional, LogBow o Desnudo';
 			}
 
 			//Competiton Split

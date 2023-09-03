@@ -165,7 +165,6 @@
 		<h4>Tipo<h4>
 
 		<div class="aling-container">
-
 			<a class="required-text">*</a>
 			<div class="radio-inputs">
 			  <label class="radio">

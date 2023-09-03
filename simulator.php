@@ -214,7 +214,7 @@
 				</tr>
 				<tr>
 					<td><?php echo $Ghost_R1; ?></td>
-					<td><div class="coolinput"><input type="text" placeholder="Puntos" id="Row1_user_input" class="input"></td>
+					<td><input type="text" placeholder="Puntos" id="Row1_user_input" class="input"></td>
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>

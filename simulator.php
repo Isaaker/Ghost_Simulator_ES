@@ -213,10 +213,10 @@
 				</tr>
 				<tr>
 					<td><?php echo $Ghost_R1; ?></td>
-					<td><div class="coolinput"><label for="input" class="text">Puntos:</label><input type="number" placeholder="Puntos" id="Row1_user_input" class="input"></div></td>
+					<td><div class="coolinput"><label for="input" class="text">Puntos:</label><input type="text" placeholder="Puntos" id="Row1_user_input" class="input"></div></td>
 				</tr>
 				<tr>
-					<td hidden id="Row2_ghost"><?php echo $Ghost_R1; ?></td>
+					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
 					<td hidden id="Row2_user"></td>
 				</tr>
 				<tr>

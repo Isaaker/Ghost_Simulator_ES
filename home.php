@@ -129,13 +129,13 @@
 			<a class="required-text">*</a>
 			<div class="coolinput">
 		    <label for="input" class="text">Max:</label>
-		    <input type="number" placeholder="Puntos Máximos" id="max_points" class="input">
+		    <input type="text" placeholder="Puntos Máximos" id="max_points" class="input">
 			</div>
 
 			<a class="required-text">*</a>
 			<div class="coolinput">
 		    <label for="input" class="text">Min:</label>
-		    <input type="number" placeholder="Puntos Minimos" id="min_points" class="input">
+		    <input type="text" placeholder="Puntos Minimos" id="min_points" class="input">
 			</div>
 
 		</div> <b>Los puntos máximos son por entrada</b>

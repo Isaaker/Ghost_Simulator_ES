@@ -213,15 +213,15 @@
 				</tr>
 				<tr>
 					<td><?php echo $Ghost_R1; ?></td>
-					<td><div class="coolinput"><label for="input" class="text">Puntos:</label><input type="text" placeholder="Puntos" id="Row1_user_input" class="input"></div></td>
+					<td><div class="coolinput"><input type="text" placeholder="Puntos" id="Row1_user_input" class="input"></td>
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
-					<td hidden id="Row2_user"></td>
+					<td hidden id="Row2_user"><input type="text" placeholder="Puntos" id="Row2_user_input" class="input"></td>
 				</tr>
 				<tr>
 					<td hidden id="Row3_ghost"><?php echo $Ghost_R3; ?></td>
-					<td hidden id="Row3_user"></td>
+					<td hidden id="Row3_user"><input type="text" placeholder="Puntos" id="Row3_user_input" class="input"></td>
 				</tr>
 			</table>
 		</center>

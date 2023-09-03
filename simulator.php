@@ -209,6 +209,7 @@
 			<table class="simulator_table" id="ghost_table">
 				<tr>
 					<th>Ghost</th>
+					<br>
 					<th>Usted</th>
 				</tr>
 				<tr>

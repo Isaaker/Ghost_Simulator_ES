@@ -254,7 +254,7 @@
 
 
 			//Check if variables are empty 
-			if (inputR3.value === "" || inputR2.value === "" || inputR1.value === "") {
+			if (User_R3.value === "" || User_R2.value === "" || User_R1.value === "") {
 				// Display Error
 				alert("Para poder finalizar la simulación debe haber terminado todas las entradas y haber introducido todos los puntos. ERROR: One or more variables are empty");
 				return;

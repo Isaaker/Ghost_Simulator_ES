@@ -8,7 +8,8 @@
 |Security|[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)| Push and Pull Request|
 |Security|[![SAST GitLeaks](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/gitleaks.yml)|Push and Pull Request|
 |Deploy|[![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)|Not avaible|
-|Testing|[![HTML5 & CSS Validator](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/html_css_test.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/html_css_test.yml)|Pull Request and Push to Main|
+|Testing|[![HTML5 & CSS Validator](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/html_css_test.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/html_css_test.yml)|Pull Request on all Branch and Push to Main|
+|Testing|[![Check PHP syntax](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_test.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_test.yml)|Pull Request on all Branch and Push to Main|
 
 ## Register on the site
 To register on the site [click here](https://forms.gle/GxU8BVdvJi37yJMN8)

@@ -213,15 +213,15 @@
 				</tr>
 				<tr>
 					<td><?php echo $Ghost_R1; ?></td>
-					<td><input></input></td>
+					<td><input id="User_R1" placeholder="Puntos entrada 1"></input></td>
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
-					<td><input></input></td>
+					<td><input id="User_R2" placeholder="Puntos entrada 2"></input></td>
 				</tr>
 				<tr>
 					<td hidden id="Row3_ghost"><?php echo $Ghost_R3; ?></td>
-					<td><input></input></td>
+					<td><input id="User_R3" placeholder="Puntos entrada 3"></input></td>
 				</tr>
 			</table>
 		</center>
@@ -231,30 +231,36 @@
 
 		<br>
 		<center>
-			<button class="shadow__btn" id="hideButton">Siguiente</button>
+			<button class="shadow__btn" id="end_button">Terminar</button>
 		</center>
 
 		<script>
-		const hideButton = document.getElementById('hideButton');
-		const rows = [null, 'Row2', 'Row3', 'Row4', 'Row5', 'Row6', 'Row7', 'Row8', 'Row9', 'Row10'];
-		const max_rows = 3
-		
-		let current_row = 1;
+		//End Button Script
+		function stop_simulation() {
+			//Get Input values by ID
 
-		hideButton.addEventListener('click', function() {
-			if (current_row <= max_rows) {
-				const row_ghost = document.getElementById(rows[current_row] + '_ghost');
+			const User_R3 = document.getElementById(User_R3);
+			const User_R2 = document.getElementById(User_R2);
+			const User_R1 = document.getElementById(User_R1);
 
-				row_id.style.display = 'table-row';
-				row_total_id.style.display = 'table-cell';
+			//Check Inputs
 
-				current_row += 1;
+			//Check if variables are defined
+			if (typeof User_R3 === "undefined" || typeof User_R2 === "undefined" || typeof User_R1 === "undefined") {
+				// Display Error
+				alert("El Simulador ha tenido un comportamiento inesperado, vuelva a intentarlo recargando la pagina. Si el problema persiste, por favor contacte con el administrador (archery.ghost.simulator@gmail.com). ERROR: The user input variables were not defined correctly.");
+				return;
+  			}
+
+
+			//Check if variables are empty 
+			if (inputR3.value === "" || inputR2.value === "" || inputR1.value === "") {
+				// Display Error
+				alert("Para poder finalizar la simulación debe haber terminado todas las entradas y haber introducido todos los puntos. ERROR: One or more variables are empty");
+				return;
 			}
-
-			if (current_row > max_rows) {
-				hideButton.style.display = 'hidden';
-			}
-		});
+		}
+		document.getElementById("end_button").onclick = stop_simulation;
 		</script>
     </div>
 	<br>

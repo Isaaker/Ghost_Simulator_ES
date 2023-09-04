@@ -6,6 +6,7 @@
 | Category | Status | Run on: |
 | -- | -- | -- |
 |Security|[![Semgrep](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/semgrep.yml)| Push and Pull Request|
+|Security|[![SAST GitLeaks](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/gitleaks.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/gitleaks.yml)|Push and Pull Request|
 |Deploy|[![Deploy Ec2](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/putfiles2ec2.yml)|Not avaible|
 |Testing|[![HTML5 & CSS Validator](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/html_css_test.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/html_css_test.yml)|Pull Request and Push to Main|
 

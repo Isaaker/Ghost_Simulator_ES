@@ -99,6 +99,8 @@ footer {
 td{
 	line-height: 200%;
 	text-align: left;
+  width: 100px;
+  height: 50px;
 }
 
 th{

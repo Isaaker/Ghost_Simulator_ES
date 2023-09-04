@@ -217,11 +217,11 @@
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
-					<td hidden id="Row2_user">34</td>
+					<td><input></input></td>
 				</tr>
 				<tr>
 					<td hidden id="Row3_ghost"><?php echo $Ghost_R3; ?></td>
-					<td hidden id="Row3_user">54<</td>
+					<td><input></input></td>
 				</tr>
 			</table>
 		</center>
@@ -238,12 +238,12 @@
 		const hideButton = document.getElementById('hideButton');
 		const rows = [null, 'Row2', 'Row3', 'Row4', 'Row5', 'Row6', 'Row7', 'Row8', 'Row9', 'Row10'];
 		const max_rows = 3
+		
 		let current_row = 1;
 
 		hideButton.addEventListener('click', function() {
 			if (current_row <= max_rows) {
 				const row_ghost = document.getElementById(rows[current_row] + '_ghost');
-				const row_user = document.getElementById(rows[current_row] + '_user');
 
 				row_id.style.display = 'table-row';
 				row_total_id.style.display = 'table-cell';

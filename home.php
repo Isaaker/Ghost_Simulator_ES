@@ -138,7 +138,7 @@
 		    <input type="text" placeholder="Puntos Minimos" id="min_points" class="input">
 			</div>
 
-		</div> <b>Los puntos máximos son por entrada</b>
+		</div> <b>Los puntos introducidos deben de ser por entrada por entrada</b>
 
 		<!--- Simulation modality --->
 

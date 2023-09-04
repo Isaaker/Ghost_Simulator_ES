@@ -1,42 +1,12 @@
-name: Semgrep
-
-# Github Actions sintaxis help:
-# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-
-# Semgrep CI docs
-# https://semgrep.dev/docs/semgrep-ci/overview/
-
+name: SAST Semgrep
 on:
-  # Scan changed files in PRs, block on new issues only (existing issues ignored)
-  # All Branches
   pull_request: {}
-
-  # Scan all files on branches, block on any issues
-  # All Branches
-  push:
-  #   branches: ["develop", "main"]
-
-  # Schedule this job to run at a certain time, using cron syntax
-  # Note that * is a special character in YAML so you have to quote this string
-  # schedule:
-  #   - cron: '30 0 1,15 * *' # scheduled for 00:30 UTC on both the 1st and 15th of the month
-
+  push: {}
+  workflow_dispatch:
 jobs:
-  semgrep:
-    name: Scan
-    runs-on: ubuntu-latest
-    container:
-      image: returntocorp/semgrep
-    # Skip any PR created by dependabot to avoid permission issues
-    if: (github.actor != 'dependabot[bot]')
-    steps:
-      # Fetch project source
-      - uses: actions/checkout@v3
-
-      - run: semgrep ci
-        env:
-          # Semgrep Rules
-          # https://github.com/returntocorp/semgrep-rules
-          SEMGREP_RULES: >-
-            p/security-audit
-            p/secrets
+  sast_semgrep:
+    permissions:                                                                         
+      contents: read
+    uses: ramshackle-code/sast_semgrep/.github/workflows/sast_semgrep.yml@ea88e0d71ef7abf21aca8c2d108cdce28a878e7a   #v1.0.0
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}

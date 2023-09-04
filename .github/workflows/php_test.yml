@@ -1,9 +1,9 @@
 name: Check PHP syntax
 
 on:
+  pull_request: {}
   push:
-    branches:
-      - main
+    branches: ["main"]
 
 jobs:
   check-syntax:

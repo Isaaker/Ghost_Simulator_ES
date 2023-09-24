@@ -60,7 +60,7 @@ footer {
 .simulation_form {
   margin: 100px;
   /*min-width: 260px;*/
-	width: 260px;
+	width: 500px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 5px;

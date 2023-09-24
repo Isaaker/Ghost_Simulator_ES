@@ -198,15 +198,6 @@
 			</div>
 		</div>
 
-		<h4>Avanzado<h4>
-		<a class="required-text">Funciones no disponibles actualmente</a>
-		<br>
-		Media Comeptición (Esta función te permite realizar un solo round de la competición)
-		<label class="container">
-			<input type="checkbox" name="competition_split" value="true">
-			 <div class="checkmark"></div>
-		</label>
-
 	<br>
 	</body>
 	<footer>

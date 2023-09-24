@@ -125,7 +125,7 @@
 			// Display an error message and redirect the user to the home page
 			echo '
 			<div class="simulation_form">
-				<h1>Error</h1>
+				<h1 style="color:red;">Error</h1>
 				<p>La configuración no se ha realizado correctamente, pulse le botón a continuación para volver a la página de configuración.</p>
 				<br>
 				<p>ERROR: ' . $e . '<p>

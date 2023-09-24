@@ -213,7 +213,7 @@
 				</tr>
 				<tr>
 					<td><?php echo $Ghost_R1; ?></td>
-					<td><input id="User_R1" placeholder="Puntos entrada 1"></input></td>
+					<td id="User_R1"></input></td>
 				</tr>
 				<tr>
 					<td hidden id="Row2_ghost"><?php echo $Ghost_R2; ?></td>
@@ -225,6 +225,19 @@
 				</tr>
 			</table>
 		</center>
+		<center>
+			<h3>Total</h3>
+			<table class="simulator_table" id="ghost_table">
+				<tr>
+					<th>Ghost</th>
+					<th>Usted</th>
+				</tr>
+				<tr>
+					<td id="ghost_total"></input></td>
+					<td id="user_total"></input></td>
+				</tr>
+			</table>
+		<center>
 
 
 		<!--- Make table data visible --->
@@ -238,6 +251,8 @@
 		//End Button Script
 		function stop_simulation() {
 			//Get Input values by ID
+			const user_total = document.getElementById(user_total);
+			const ghost_total = document.getElementById(user_total);
 
 			const User_R3 = document.getElementById(User_R3);
 			const User_R2 = document.getElementById(User_R2);

@@ -2,7 +2,7 @@
 
 # Condiciones de uso de Archery Ghost Simulator
 
-**Versión 2.1 - 23/08/23**
+**Versión 2.2 - 30/09/23**
 
 ## 1. Introducción
 
@@ -18,15 +18,14 @@ En estas condiciones, los siguientes términos tendrán los siguientes significa
 
 * "Plataforma" significa la página web o servicio a la que se aplican estas condiciones.
 * "Gestor de la plataforma" significa la persona encargada de la gestión de la plataforma.
-* "Credenciales" significa el conjunto de nombre de usuario y contraseña.
+* "Credenciales" significa el conjunto de correo electrónico y contraseña.
 * "Expulsión" significa el bloqueo de las credenciales de acceso a la plataforma de forma temporal o indefinida.
-* "Licencia Federativa de Tiro con Arco" significa el documento expedido por la Real Federación Española de Tiro con Arco.
 
 ## 4. Condiciones de uso
 
 El uso de la plataforma está sujeto a las siguientes condiciones:
 
-* El usuario acepta las condiciones de uso del código, que se pueden encontrar en https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt.
+* El usuario acepta la licencia de uso del código, que se pueden encontrar en https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt.
 * El contenido de la plataforma se presenta "tal cual" y sin ninguna garantía.
 * El gestor de la plataforma se reserva el derecho de cambiar estas condiciones en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en la plataforma.
 * El gestor de la plataforma no se hace responsable de los daños o perjuicios que puedan surgir del uso de la plataforma, incluyendo, pero sin limitarse a, daños por pérdida de datos, lucro cesante o daños morales.
@@ -35,7 +34,7 @@ El uso de la plataforma está sujeto a las siguientes condiciones:
 * El usuario no podrá utilizar la plataforma para enviar spam o mensajes ofensivos o dañinos.
 * El gestor de la plataforma se reserva el derecho de suspender o cancelar la cuenta de cualquier usuario que viole estas condiciones.
 
-## 5. Excepciones
+## 5. Usos y Actividades no permitidas en la plataforma
 
 Las siguientes actividades no están permitidas en la plataforma:
 
@@ -50,40 +49,29 @@ Las siguientes actividades no están permitidas en la plataforma:
 
 ## 6. Creación de cuentas
 
-**El administrador de la plataforma se reserva el derecho de admisión.**
+**Las credenciales que le concede el servicio son personales e intransferibles, queda TERMINANTEMENTE PROHIBIDO que una persona diferente a la que se registro haga uso de estas, además esta actividad esta actividad se puede considerar delito.**
 
-**Al registrarse en este sitio, usted acepta proporcionar información personal veraz. Si proporciona información falsa, puede estar incurriendo en un delito. La empresa se reserva el derecho de tomar cualquier medida legal que considere apropiada en caso de proporcionar información falsa, incluyendo la cancelación de su cuenta y la presentación de cargos criminales.**
+### Requisitos
 
-## Requisitos
-
-* Tener una licencia que pueda ser verificada (comprobando si se ha participado en alguna competición).
 * Tener una cuenta de correo electrónico.
 * Estar en España (ya que el servicio está restringido en el resto de países).
+* No estar haciendo uso de ninguna tecnologia VPN o similar.
+* No haber sido expulsado del servicio con anterioridad.
 
 ### Procedimiento
 
-1. Rellena el formulario de creación de cuenta.
-2. Espera a que la petición sea revisada por el administrador.
-3. Recibirás una respuesta en la que se indicará si tu cuenta ha sido aprobada.
-* En caso de ser aceptado, se te proporcionarán unas claves de acceso.
-* En caso contrario, se te informara de por que no has sido admitido.
-
-### Apelación
-
-El proceso de apelación solo se puede realizar una vez halla recibido un correo electrónico del administrador informandole de que no se rechazo la creación de cuenta, el plazo de apelación se debe de inciar en un tiempo inferior a 15 días naturales después de recibir un correo del administrador indicandole que su creación de cuenta ha sido rechazada.
-
-Para inciar el proceso de apelación debera de responder al correo electrónico que recibio y en el que se le indicaba que su petición habia sido rechazada-
-
-**¿Que debo de indicarle al administrador?**
-
-Es posible de que su cuenta halla sido rechazada por que no pudimos verificar que usted fuera una persona real, para darnos una forma de verificar esto pude usar uno de los siguietes dos métodos:
-
-1. Un enlace a una página de inscripción, hoja de puntuación u otor documento de alguna entidad oficial tales como Clubes o Federaciónes Nacionales / Internacionales
-2. Una imagen de su licencia en la que se pueda ver su nombre completo y numero de licencia, deera de recortarla de forma que se vean unicamente estos datos.
+El Sistema de Creación de Cuentas para nuestro servicio esta totalmente automatizado y por lo tanto solo es necesario acceder a la plataforma y pulsar la opción de Creación de Cuenta que se nos mostrara.
 
 ### Aceptación
 
-Al crear una cuenta, aceptas estas condiciones de uso, en caso de que tu cuenta no halla sido aceptada daremos 
+Al crear una cuenta, aceptas estas condiciones de uso, en caso de que en algun momento quieras dejar de aceptar estas deberas comunicarselo al administrador en el siguiente correo electronico: archery.ghost.simulator@gmail.com
+
+### Excepciones
+
+* El administrador de la plataforma se reserva el derecho de admisión.
+* Si proporciona información falsa, puede estar incurriendo en un delito. El administrador se reserva el derecho de tomar cualquier medida legal que considere apropiada en caso de proporcionar información falsa, incluyendo la cancelación de su cuenta y la presentación de cargos criminales.
+* A partir de el momento en el que se halla registrado su cuenta puede ser suspendida o eliminada si el administrador lo considerase necesario.
+* El administrador no esta obligado a comunicarle ningun cambio en su cuenta.
 
 ## 7. Sanciones
 
@@ -103,22 +91,46 @@ El acceso a Ghost Archery Simulator mediante las credenciales del usuario puede 
 
 ## 10. Política de privacidad
 
-* Ghost Archery Simulator recopila datos de los usuarios únicamente con fines de seguridad y para evitar el fraude.
+Nuestra plataforma esta muy comprometida con la privacidad y seguridad de nuestros usuarios, por ello en el siguiente apartado podra leer acerca de como tratamos sus datos:
 
-* Ghost Archery Simulator no comparte los datos de los usuarios con ninguna otra persona.
+### Finalidad del tratamiento de datos
 
-* Ghost Archery Simulator puede hacer uso de estos datos para verificar su identidad.
+Ghost Archery Simulator trata sus datos de los usuarios únicamente con fines de seguridad y para evitar el fraude. Ghost Archery Simulator puede hacer uso de estos datos para verificar su identidad.
 
-* Los datos de los usuarios pueden ser conservados de forma temporal (por ejemplo, IPs) o de forma permanente (por ejemplo, correos electrónicos, número de licencia).
-
+### Datos Recopilados
 Los datos que se recopilan de los usuarios son:
 
-* Nombre
-* Apellidos
-* Nº de Licencia
-* Comunidad Autónoma
 * Correo Electrónico
+* Contraseña de la plataforma (Esta se enviara siempre encriptada para poder verificar su identidad)
 * IPs, navegador y otros identificadores electrónicos
+
+### Terceros destinatarios de los datos personales
+
+Al acceder, navegar, registrarse y realizar otras actividades en nuestra plataforma web, sus datos seran compartidos con algunos de nuestros proovedores de servicios. Estos datos se compartiran de forma segura entre ambos servicios y se trataran conforme a la Política de Privacidad de estos:
+
+* Okta: [Política de Privacidad](https://www.okta.com/privacy-policy/)
+* Cloudflare: [Política de Privacidad](https://www.cloudflare.com/privacypolicy/)
+* AWS: [Política de Privacidad](https://aws.amazon.com/privacy/)
+* GitHub: [Política de Privacidad](https://docs.github.com/es/site-policy/privacy-policies/github-privacy-statement)
+
+### Plazo de conservación
+
+* Datos Temporales: Estos se conservaran de forma temporal, estos datos pueden incluir pero no se limitan a: IPs, navegador, identificadores electrónicos...
+* Datos Permanentes: Estos se conservaran de forma permanente (Hasta que el usuario elimine su cuenta o solicite la eliminación de estos datos), estos datos pueden incluir pero no se limitan a: Correos electrónicos, Contraseña de la plataforma (Esta se enviara siempre encriptada para poder verificar su identidad)
+
+**La plataforma conservara y gestionara los datos del usuario de forma segura e intentara transmitir estos de forma cifrada siempre que le sea posible.**
+
+**Sus credenciales de acceso a la plataforma son almacenadas en la Union Europea**
+
+### Aceptación
+
+Este apartaado sobre Política de Privacidad se encuentra incluido en las Condiciones de Uso por lo que forma como parte de ellas y al aceptar las mismas aceptara este apartado. 
+
+Para cumplir con las leyes aplicables se le preguntara al acceder a la plataforma si esta de acuerdo con las Condiciones de Uso del presente documento y lo includio en este apartado, en caso de no ser así, debera de solicitar que su cuenta sea eliminada.
+
+Al aceptar esta Política de Privacidad, también acepta la de nuestros proovedores que también procesaran sus datos de acuerdo a su propia Política de Privacidad, para saber más dirigase a [este apartado](https://github.com/Isaaker/Ghost_Simulator_ES/edit/main/CONDITIONS.md#terceros-destinatarios-de-los-datos-personales).
+
+### Ejercitar sus derechos
 
 Para solicitar una copia o el borrado de los datos, puedes dirigirte a la siguiente dirección de correo electrónico: archery.ghost.simulator@gmail.com.
 
@@ -134,6 +146,8 @@ Si tienes alguna pregunta o queja sobre estas condiciones de uso, puedes ponerte
 
 <hr>
 
-**En Madrid a 23 Agosto de 2023**
+<img src="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/Archery_Ghost_Simulator.png?raw=true" alt="Logo de Archery Ghost Simulator" width="50" height="50">
+
+**En Madrid a 30 de Septiembre de 2023**
 
 Isaac Hernán Martí, Administrador de Ghost Archery Simulator

@@ -6,4 +6,8 @@ header {
     position: fixed;
     z-index: 100;
     align-items: right;
+    align-content: right;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
 }

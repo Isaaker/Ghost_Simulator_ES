@@ -2,7 +2,7 @@
 
 header {
     background: whitesmoke;
-    width: 99%;
+    width: auto;
     height: auto;
     position: center;
     padding: 20px;
@@ -19,10 +19,6 @@ header {
 
 .UI_icons{
     align-items: right;
-}
-
-.text{
-    text-align: center;
 }
 
 

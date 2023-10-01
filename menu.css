@@ -2,14 +2,16 @@
 
 header {
     background: whitesmoke;
-    width: 70%;
+    width: 100%;
     height: auto;
-    position: center;
+    position: fixed;
     z-index: 100;
     padding: 20px;
     display: flex;
     border-radius: 5px;
     margin: 5px;
+
+    justify-content: center;
 
     font-family: Century;
     font-size: 30px;
@@ -22,6 +24,5 @@ header {
 }
 
 .text{
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }

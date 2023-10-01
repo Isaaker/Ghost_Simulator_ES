@@ -3,11 +3,13 @@
 header {
     background: whitesmoke;
     width: 100%;
+    height: auto;
     position: fixed;
     z-index: 100;
+    justify-content: right;
     align-items: right;
-    align-content: right;
-    border: 2px solid black;
     padding: 20px;
     display: flex;
+    border-radius: 5px;
+    margin: 5px;
 }

@@ -34,9 +34,9 @@
 			Archery Ghost Simulator
 		</div>
 		<div class="UI_icons">
-        <i class="fa fa-home"></i>
-        <i class="fa fa-search"></i>
-        <i class="fa fa-user"></i>
+			<i class="fa fa-home"></i>
+			<i class="fa fa-search"></i>
+			<i class="fa fa-user"></i>
     	</div>
 	</header>
 

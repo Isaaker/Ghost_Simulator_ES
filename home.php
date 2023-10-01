@@ -34,6 +34,8 @@
 		Archery Ghost Simulator
 		<div class="UI_icons">
 			<a href="/about.html"><img src="/images/ui_icons/info.svg" alt="about"><img></a>
+			<a href="/settings.html"><img src="/images/ui_icons/settings.svg" alt="settings"><img></a>
+			<a href="https://ghostsimulator.eu.auth0.com/oidc/logout"><img src="/images/ui_icons/log-out.svg" alt="logout"><img></a>
 		</div>
 		
 	</header>

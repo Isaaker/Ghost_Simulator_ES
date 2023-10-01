@@ -7,7 +7,7 @@ header {
     position: center;
     padding: 20px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 20px;
     margin: 5px;
 
     justify-content: space-between;

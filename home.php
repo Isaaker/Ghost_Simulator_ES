@@ -31,13 +31,10 @@
 <main>
 	<header>
 		<div class="text">
+			<img src="/images/Archery_Ghost_Simulator.png" alt="ghost simulator logo" width="30" height="30"></img>
 			Archery Ghost Simulator
 		</div>
-		<div class="UI_icons">
-			<i class="fa fa-home"></i>
-			<i class="fa fa-search"></i>
-			<i class="fa fa-user"></i>
-    	</div>
+		
 	</header>
 
 	<body>

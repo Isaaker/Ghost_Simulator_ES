@@ -47,14 +47,6 @@ footer {
               0 0 100px #00FF00;
 }
 
-/* Issue Message */
-
-.issue_message{
-	font-family: "Century Gothic";
-	color: green;
-	padding: 14px;
-}
-
 /* Simulation Form */
 
 .simulation_form {

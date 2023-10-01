@@ -28,10 +28,13 @@
 </head>
 
 <main>
+	<header>
+		<a href="/about.html"><img src="/images/ui_icons/info.svg" alt="About"></img></a>
+		<a href="/settings.html"><img src="/images/ui_icons/settings.svg" alt="Settings"></img></a>
+		<a href="https://ghostsimulator.eu.auth0.com/oidc/logout"><img src="/images/ui_icons/log-out.svg" alt="Log out"></img></a>
+	</header>
+
 	<body>
-
-		<a href="./about.html"><button>ℹ️ Acerca de...</button></a>
-
 		<br>
 		<!--- Web Page Banner --->
 		<img src="./images/archery.png" width="100%" height=auto>

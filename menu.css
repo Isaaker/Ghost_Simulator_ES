@@ -1,0 +1,9 @@
+/*This is the menu of the web*/
+
+header {
+    background: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    align-items: right;
+}

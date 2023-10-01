@@ -141,7 +141,6 @@
 	<br>
 
     <div class="simulation_form">
-    	<p class="issue_message"> 💡 Consejo: Para poder acceder más rapido a la configuración que estas usando ahora mismo añade esta página como marcador</p>
     	<!--- Web Page Banner --->
     	<center>
     		<img src="./images/Archery_Ghost_Simulator.png" alt="Ghost Simulator Logo" width="150" height="150">

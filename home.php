@@ -30,9 +30,14 @@
 
 <main>
 	<header>
-		<a href="/about.html"><img src="/images/ui_icons/info.svg" alt="About"></img></a>
-		<a href="/settings.html"><img src="/images/ui_icons/settings.svg" alt="Settings"></img></a>
-		<a href="https://ghostsimulator.eu.auth0.com/oidc/logout" target="_blank" rel="noopener noreferrer"><img src="/images/ui_icons/log-out.svg" alt="Log out"></img></a>
+		<div class="text">
+			Archery Ghost Simulator
+		</div>
+		<div class="UI_icons">
+			<a href="/about.html"><img src="/images/ui_icons/info.svg" alt="About"></img></a>
+			<a href="/settings.html"><img src="/images/ui_icons/settings.svg" alt="Settings"></img></a>
+			<a href="https://ghostsimulator.eu.auth0.com/oidc/logout" target="_blank" rel="noopener noreferrer"><img src="/images/ui_icons/log-out.svg" alt="Log out"></img></a>
+		</div>
 	</header>
 
 	<body>

@@ -14,5 +14,3 @@ jobs:
 
       - name: Check PHP syntax
         uses: pipeline-components/php-codesniffer@v0.12.3
-        with:
-          standard: PSR12

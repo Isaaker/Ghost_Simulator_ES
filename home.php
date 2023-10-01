@@ -31,7 +31,7 @@
 <main>
 	<header>
 		<div class="text">
-			<img src="/images/Archery_Ghost_Simulator.png" alt="ghost simulator logo" width="30" height="30"></img>
+			<img src="/images/Archery_Ghost_Simulator.png" alt="ghost simulator logo" width="50" height="50"></img>
 			Archery Ghost Simulator
 		</div>
 		

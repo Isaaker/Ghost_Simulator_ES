@@ -2,10 +2,9 @@
 
 header {
     background: whitesmoke;
-    width: 80%;
+    width: 100%;
     height: auto;
     position: fixed;
-    z-index: 80;
     padding: 20px;
     display: flex;
     border-radius: 5px;

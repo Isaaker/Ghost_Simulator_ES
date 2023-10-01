@@ -4,9 +4,8 @@ header {
     background: whitesmoke;
     width: 70%;
     height: auto;
-    position: fixed;
+    position: center;
     z-index: 100;
-    justify-content: center;
     padding: 20px;
     display: flex;
     border-radius: 5px;

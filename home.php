@@ -23,6 +23,7 @@
 
 <!--- CSS Style --->
 <link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
 
 <title>Ghost Archery Simulator</title>
 </head>
@@ -31,7 +32,7 @@
 	<header>
 		<a href="/about.html"><img src="/images/ui_icons/info.svg" alt="About"></img></a>
 		<a href="/settings.html"><img src="/images/ui_icons/settings.svg" alt="Settings"></img></a>
-		<a href="https://ghostsimulator.eu.auth0.com/oidc/logout"><img src="/images/ui_icons/log-out.svg" alt="Log out"></img></a>
+		<a href="https://ghostsimulator.eu.auth0.com/oidc/logout" target="_blank" rel="noopener noreferrer"><img src="/images/ui_icons/log-out.svg" alt="Log out"></img></a>
 	</header>
 
 	<body>

@@ -93,11 +93,11 @@
 			}
 
 
-		  // Check if the two fields contain only numbers
-		  if (!/^[0-9]+$/.test(max_points) || !/^[0-9]+$/.test(min_points)) {
-		    alert("Por favor introduzca solo numeros en el area de puntos");
-		    return;
-		  }
+			// Check if the two fields contain only numbers
+			if (!/^[0-9]+$/.test(max_points) || !/^[0-9]+$/.test(min_points)) {
+				alert("Por favor introduzca solo numeros en el area de puntos");
+				return;
+			}
 
 
       //Build the URL

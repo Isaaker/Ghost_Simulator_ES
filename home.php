@@ -69,10 +69,10 @@
 			//Qualifiers
 
 			//Compound
-		  if (type === "qualifiers") {
+		    if (type === "qualifiers") {
 				if (max_points > 31 || min_points < 0 || min_points >= max_points) {
 			    alert("Los puntos introduciodos son incompatibles");
-		      return;
+		      	return;
 		    }
 			}
 
@@ -81,14 +81,14 @@
 			if (type === "competition" && location === "indoor") {
 				if (max_points > 31 || min_points < 0 || min_points >= max_points) {
 			    alert("Los puntos introduciodos no son validos");
-		      return;
+		      	return;
 		    }
 			}
 
 			if (type === "competition" && location === "outdoor") {
 				if (max_points > 61 || min_points < 0 || min_points >= max_points) {
 			    alert("Los puntos introduciodos son incompatibles");
-		      return;
+		      	return;
 		    }
 			}
 
@@ -105,10 +105,10 @@
 			try{
 				var competition_split = document.querySelector('input[name="competition_split"]:checked').value;
 				// Build the URL to pass the arguments to the PHP page with competition_split
-			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&modality=" + modality + "&competition_split=" + competition_split;
+			  	var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&modality=" + modality + "&competition_split=" + competition_split;
 			}catch (error) {
 				// Build the URL to pass the arguments to the PHP page without competition_split
-			  var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&modality=" + modality;
+			  	var url = "simulator.php?max_points=" + max_points + "&min_points=" + min_points + "&type=" + type + "&location=" + location + "&modality=" + modality;
 			}
 
 		  // Redirect to the PHP page

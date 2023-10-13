@@ -53,9 +53,9 @@
 		  // Get the values of the two input fields
 		  var max_points = document.getElementById("max_points").value;
 		  var min_points = document.getElementById("min_points").value;
-			var location = document.querySelector('input[name="simulation_location"]:checked').value;
-			var type = document.querySelector('input[name="simulation_type"]:checked').value;
-			var modality = document.querySelector('input[name="modality"]:checked').value;
+		  var location = document.querySelector('input[name="simulation_location"]:checked').value;
+	      var type = document.querySelector('input[name="simulation_type"]:checked').value;
+		  var modality = document.querySelector('input[name="modality"]:checked').value;
 
 
 		  // Check if the two fields are empty

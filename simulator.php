@@ -95,7 +95,7 @@
 			}
 
 			if ( $location != "indoor"){
-				if ( $type != "outdoor"){
+				if ( $location != "outdoor"){
 					throw new Exception("The value of the type variable needs to be indoor or outdoor");
 				}
 			}

@@ -12,7 +12,7 @@
 |Testing|[![Check PHP syntax](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_test.yml/badge.svg)](https://github.com/Isaaker/Ghost_Simulator_ES/actions/workflows/php_test.yml)|Pull Request on all Branch and Push to Main|
 
 ## Register on the site
-To register on the site [click here](https://forms.gle/GxU8BVdvJi37yJMN8)
+You can get registred on the site join to the [platform home page](https://ghostsimulator.nsupdate.info)
 
 
 ## About the project

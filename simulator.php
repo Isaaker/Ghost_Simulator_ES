@@ -30,6 +30,61 @@
 <main>
 	<body>
 
+		<!--- Unsaved Changes Alert --->
+
+		<script>
+			"use strict";
+			(() => {
+			const modified_inputs = new Set;
+			const defaultValue = "defaultValue";
+			// store default values
+			addEventListener("beforeinput", (evt) => {
+				const target = evt.target;
+				if (!(defaultValue in target || defaultValue in target.dataset)) {
+						target.dataset[defaultValue] = ("" + (target.value || target.textContent)).trim();
+				}
+			});
+			// detect input modifications
+			addEventListener("input", (evt) => {
+				const target = evt.target;
+				let original;
+				if (defaultValue in target) {
+						original = target[defaultValue];
+				} else {
+						original = target.dataset[defaultValue];
+				}
+				if (original !== ("" + (target.value || target.textContent)).trim()) {
+						if (!modified_inputs.has(target)) {
+								modified_inputs.add(target);
+						}
+				} else if (modified_inputs.has(target)) {
+						modified_inputs.delete(target);
+				}
+			});
+			// clear modified inputs upon form submission
+			addEventListener("submit", (evt) => {
+				modified_inputs.clear();
+				// to prevent the warning from happening, it is advisable
+				// that you clear your form controls back to their default
+				// state with evt.target.reset() or form.reset() after submission
+			});
+			addEventListener("save_button", (evt) => {
+				modified_inputs.clear();
+				// to prevent the warning from happening, it is advisable
+				// that you clear your form controls back to their default
+				// state with evt.target.reset() or form.reset() after submission
+			});
+			// warn before closing if any inputs are modified
+			addEventListener("beforeunload", (evt) => {
+				if (modified_inputs.size) {
+						const unsaved_changes_warning = "Si sale ahora los datos de la simulacion no se guardaran";
+						evt.returnValue = unsaved_changes_warning;
+						return unsaved_changes_warning;
+				}
+			});
+			})();
+		</script>
+
 		<!--- Check PHP URL Arguments --->
 		<?php
 
@@ -243,38 +298,19 @@
 
 		<br>
 		<center>
-			<button class="shadow__btn" id="end_button">Terminar</button>
+			<button class="shadow__btn" id="save_button">Guardar</button>
 		</center>
 
 		<script>
 		//End Button Script
 		function stop_simulation() {
-			//Get Input values by ID
-			const user_total = document.getElementById(user_total);
-			const ghost_total = document.getElementById(user_total);
-
-			const User_R3 = document.getElementById(User_R3);
-			const User_R2 = document.getElementById(User_R2);
-			const User_R1 = document.getElementById(User_R1);
-
-			//Check Inputs
-
-			//Check if variables are defined
-			if (typeof User_R3 === "undefined" || typeof User_R2 === "undefined" || typeof User_R1 === "undefined") {
-				// Display Error
-				alert("El Simulador ha tenido un comportamiento inesperado, vuelva a intentarlo recargando la pagina. Si el problema persiste, por favor contacte con el administrador (archery.ghost.simulator@gmail.com). ERROR: The user input variables were not defined correctly.");
-				return;
-  			}
 
 
-			//Check if variables are empty 
-			if (User_R3.value === "" || User_R2.value === "" || User_R1.value === "") {
-				// Display Error
-				alert("Para poder finalizar la simulación debe haber terminado todas las entradas y haber introducido todos los puntos. ERROR: One or more variables are empty");
-				return;
-			}
+
+			//Disable Unsaved changes alert
+			disable_unsaved_alert()
 		}
-		document.getElementById("end_button").onclick = stop_simulation;
+		document.getElementById("save_button").onclick = stop_simulation();
 		</script>
     </div>
 	<br>

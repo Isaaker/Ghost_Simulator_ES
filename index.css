@@ -9,6 +9,15 @@ body {
   align-items: center;
 }
 
+.version{
+color: black;
+margin-top: auto;
+margin-top: 0px;
+display: static;
+justify-content: center;
+align-items: center;
+}
+
 /* Loading view */
 
 .hamster-container {

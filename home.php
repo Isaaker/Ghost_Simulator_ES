@@ -37,7 +37,7 @@
 			<a href="/settings.html"><img src="/images/ui_icons/settings.svg" alt="settings"><img></a>
 			<a href="https://ghostsimulator.eu.auth0.com/oidc/logout"><img src="/images/ui_icons/log-out.svg" alt="logout"><img></a>
 		</div>
-		
+
 	</header>
 
 	<body>
@@ -147,7 +147,7 @@
 		    <input type="text" placeholder="Puntos Minimos" id="min_points" class="input">
 			</div>
 
-		</div> <b>Los puntos introducidos deben de ser por entrada por entrada</b>
+		</div> <b>Los puntos introducidos deben de ser por entrada</b>
 
 		<!--- Simulation modality --->
 

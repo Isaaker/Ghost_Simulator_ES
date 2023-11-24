@@ -46,9 +46,7 @@
 		<!--- Unsaved Changes Alert --->
 
 		<script>
-			disable_unsaved = false
-			while (disable_unsaved == false) {
-				"use strict";
+			"use strict";
 				(() => {
 				const modified_inputs = new Set;
 				const defaultValue = "defaultValue";
@@ -98,7 +96,6 @@
 					}
 				});
 				})();
-			}
 		</script>
 
 		<!--- Check PHP URL Arguments --->

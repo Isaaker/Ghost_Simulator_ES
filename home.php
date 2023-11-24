@@ -30,7 +30,7 @@
 
 <main>
 	<header>
-		<img src="/images/Archery_Ghost_Simulator.png" alt="ghost simulator logo" width="40" height="40"></img>
+		<a href="./"><img src="/images/Archery_Ghost_Simulator.png" alt="ghost simulator logo" width="40" height="40"></img></a>
 		Archery Ghost Simulator
 		<div class="UI_icons">
 			<a href="/about.html"><img src="/images/ui_icons/info.svg" alt="about"><img></a>

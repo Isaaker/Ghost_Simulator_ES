@@ -47,10 +47,7 @@
 
 		<script>
 			disable_unsaved = false
-			while (true) {
-				if (disable_unsaved == true){
-					break;
-				}
+			while (disable_unsaved == false) {
 				"use strict";
 				(() => {
 				const modified_inputs = new Set;

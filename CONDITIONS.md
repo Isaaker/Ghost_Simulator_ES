@@ -2,7 +2,7 @@
 
 # Condiciones de uso de Archery Ghost Simulator
 
-**Versión 2.3 - 1/10/23**
+**Versión 2.4 - 23/11/23**
 
 ## 1. Introducción
 
@@ -95,14 +95,14 @@ Nuestra plataforma esta muy comprometida con la privacidad y seguridad de nuestr
 
 ### Finalidad del tratamiento de datos
 
-Ghost Archery Simulator trata sus datos de los usuarios únicamente con fines de seguridad y para evitar el fraude. Ghost Archery Simulator puede hacer uso de estos datos para verificar su identidad.
+Ghost Archery Simulator trata sus datos de los usuarios únicamente con fines de seguridad, análisis y para evitar el fraude. Ghost Archery Simulator puede hacer uso de estos datos para verificar su identidad.
 
 ### Datos Recopilados
 Los datos que se recopilan de los usuarios son:
 
 * Correo Electrónico
 * Contraseña de la plataforma (Esta se enviara siempre encriptada para poder verificar su identidad)
-* IPs, navegador y otros identificadores electrónicos
+* IPs, navegador y otras métricas e identificadores electrónicos
 
 ### Terceros destinatarios de los datos personales
 
@@ -111,6 +111,7 @@ Al acceder, navegar, registrarse y realizar otras actividades en nuestra platafo
 * Okta: [Política de Privacidad](https://www.okta.com/privacy-policy/)
 * AWS: [Política de Privacidad](https://aws.amazon.com/privacy/)
 * GitHub: [Política de Privacidad](https://docs.github.com/es/site-policy/privacy-policies/github-privacy-statement)
+* Cloudflare: [Política de Privacidad](https://www.cloudflare.com/es-es/privacypolicy/)
 
 ### Plazo de conservación
 
@@ -147,6 +148,6 @@ Si tienes alguna pregunta o queja sobre estas condiciones de uso, puedes ponerte
 
 <img src="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/Archery_Ghost_Simulator.png?raw=true" alt="Logo de Archery Ghost Simulator" width="50" height="50">
 
-**En Madrid a 1 de Octubre de 2023**
+**En Madrid a 24 de Noviembre de 2023**
 
 Isaac Hernán Martí, Administrador de Ghost Archery Simulator

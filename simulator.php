@@ -46,56 +46,62 @@
 		<!--- Unsaved Changes Alert --->
 
 		<script>
-			"use strict";
-			(() => {
-			const modified_inputs = new Set;
-			const defaultValue = "defaultValue";
-			// store default values
-			addEventListener("beforeinput", (evt) => {
-				const target = evt.target;
-				if (!(defaultValue in target || defaultValue in target.dataset)) {
-						target.dataset[defaultValue] = ("" + (target.value || target.textContent)).trim();
+			disable_unsaved = false
+			while (true) {
+				if (disable_unsaved == true){
+					break;
 				}
-			});
-			// detect input modifications
-			addEventListener("input", (evt) => {
-				const target = evt.target;
-				let original;
-				if (defaultValue in target) {
-						original = target[defaultValue];
-				} else {
-						original = target.dataset[defaultValue];
-				}
-				if (original !== ("" + (target.value || target.textContent)).trim()) {
-						if (!modified_inputs.has(target)) {
-								modified_inputs.add(target);
-						}
-				} else if (modified_inputs.has(target)) {
-						modified_inputs.delete(target);
-				}
-			});
-			// clear modified inputs upon form submission
-			addEventListener("submit", (evt) => {
-				modified_inputs.clear();
-				// to prevent the warning from happening, it is advisable
-				// that you clear your form controls back to their default
-				// state with evt.target.reset() or form.reset() after submission
-			});
-			addEventListener("save_button", (evt) => {
-				modified_inputs.clear();
-				// to prevent the warning from happening, it is advisable
-				// that you clear your form controls back to their default
-				// state with evt.target.reset() or form.reset() after submission
-			});
-			// warn before closing if any inputs are modified
-			addEventListener("beforeunload", (evt) => {
-				if (modified_inputs.size) {
-						const unsaved_changes_warning = "Si sale ahora los datos de la simulacion no se guardaran";
-						evt.returnValue = unsaved_changes_warning;
-						return unsaved_changes_warning;
-				}
-			});
-			})();
+				"use strict";
+				(() => {
+				const modified_inputs = new Set;
+				const defaultValue = "defaultValue";
+				// store default values
+				addEventListener("beforeinput", (evt) => {
+					const target = evt.target;
+					if (!(defaultValue in target || defaultValue in target.dataset)) {
+							target.dataset[defaultValue] = ("" + (target.value || target.textContent)).trim();
+					}
+				});
+				// detect input modifications
+				addEventListener("input", (evt) => {
+					const target = evt.target;
+					let original;
+					if (defaultValue in target) {
+							original = target[defaultValue];
+					} else {
+							original = target.dataset[defaultValue];
+					}
+					if (original !== ("" + (target.value || target.textContent)).trim()) {
+							if (!modified_inputs.has(target)) {
+									modified_inputs.add(target);
+							}
+					} else if (modified_inputs.has(target)) {
+							modified_inputs.delete(target);
+					}
+				});
+				// clear modified inputs upon form submission
+				addEventListener("submit", (evt) => {
+					modified_inputs.clear();
+					// to prevent the warning from happening, it is advisable
+					// that you clear your form controls back to their default
+					// state with evt.target.reset() or form.reset() after submission
+				});
+				addEventListener("save_button", (evt) => {
+					modified_inputs.clear();
+					// to prevent the warning from happening, it is advisable
+					// that you clear your form controls back to their default
+					// state with evt.target.reset() or form.reset() after submission
+				});
+				// warn before closing if any inputs are modified
+				addEventListener("beforeunload", (evt) => {
+					if (modified_inputs.size) {
+							const unsaved_changes_warning = "Si sale ahora los datos de la simulacion no se guardaran";
+							evt.returnValue = unsaved_changes_warning;
+							return unsaved_changes_warning;
+					}
+				});
+				})();
+			}
 		</script>
 
 		<!--- Check PHP URL Arguments --->
@@ -205,7 +211,6 @@
 
 		?>
 
-    <a href="./" ><button>🏠 Home</button></a>
 	<br>
 
     <div class="simulation_form">
@@ -321,7 +326,7 @@
 
 
 			//Disable Unsaved changes alert
-			disable_unsaved_alert()
+			disable_unsaved = true
 		}
 		document.getElementById("save_button").onclick = stop_simulation();
 		</script>

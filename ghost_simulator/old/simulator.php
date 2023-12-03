@@ -306,7 +306,7 @@
 		<center>
 
 
-		<!--- Make table data visible --->
+		<!--- Save Simulation Data --->
 
 		<br>
 		<center>

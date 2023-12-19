@@ -2,20 +2,26 @@
 <html>
 <head>
 
+<!--- Content Security Policy (CSP)-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+<meta http-equiv="Content-Security-Policy" content="img-src 'self'">
+
 <!--- Responsive Platform --->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
 
 <meta charset="utf-8">
 <!--- Favicon --->
-<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-<link rel="manifest" href="./images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+<link rel="manifest" href="{{url_for('static', filename='images/site.webmanifest')}}">
 <meta name="msapplication-TileColor" content="#fade95">
 <meta name="theme-color" content="#fade95">
 
 <!--- CSS Style --->
-<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="/static/css/home.css">
 
 
 <title>Acerca De...</title>
@@ -23,8 +29,9 @@
 
 <body>
   <a href="./" ><button>🏠 Home</button></a>
+  <a href="./home.html" ><button>🏹 Simulator</button></a>
 
-  <img src="./images/Archery_Ghost_Simulator.png" width="120" height="120" alt="Ghost Archery Logo">
+  <img src="{{url_for('static', filename='images/Archery_Ghost_Simulator.png')}}" width="120" height="120" alt="Ghost Archery Logo">
 
   <h1>Acerca del Proyecto</h1>
   El proyecto Ghost Simulator empezó como una solución a una necesidad que yo y otros arqueros teniamos, necesitabamos tener una forma fácil y rápida de poder entrenar competiciónes como si realmente estuvieramos tirando con otra persona. Existe muchas aplicaciones que permiten registrar las puntuaciones que el arquero realiza, sin embargo, no existe la posibilidad de generera las puntuaciones de otras personas como si realmente se estuviera compitiendo con otra pesrona, por ello, decidi crear este proyecto.
@@ -58,14 +65,14 @@
 
   La plataforma funciona gracias a las siguientes tecnologias:
 
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML 5 Logo" width=50 height=50/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP Logo" width=50 height=50/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3 Logo" width=50 height=50/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript Logo" width=50 height=50/>
+  <img src="{{url_for('static', filename='images/tech_logos/html5_logo.svg')}}" alt="HTML 5 Logo" width=50 height=50/>
+  <img src="{{url_for('static', filename='images/tech_logos/flask_logo.svg')}}" alt="Flask Logo" width=50 height=50/>
+  <img src="{{url_for('static', filename='images/tech_logos/css3_logo.svg')}}" alt="CSS3 Logo" width=50 height=50/>
+  <img src="{{url_for('static', filename='images/tech_logos/javascript_logo.svg')}}" alt="Javascript Logo" width=50 height=50/>
 
   <h1>Licencia</h1>
 
-  <img src="https://github.com/Isaaker/Ghost_Simulator_ES/raw/main/images/Creative%20Commons.png" alt="CC BY-NC-ND 4.0" width="100" height= "40">
+  <img src="{{url_for('static', filename='images/license_image.png')}}" alt="CC BY-NC-ND 4.0" width="100" height= "40">
 
   <p>Todo el proyecto Ghost Simulator incluido imagenes, software, documentos y otras obras derivadas del proyecto están bajo la Licencia Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License - CC BY-NC-ND 4.0, que pudes consultar <a href="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt">aquí</a>.</p>
 

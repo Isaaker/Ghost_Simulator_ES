@@ -31,7 +31,7 @@ def create_app(test_config=None):
     @app.route('/index.php')
     @app.route('/')
     def index():
-        return 'Hello, World!'
+        return render_template("/index.html")
         
     # Login
 
@@ -55,7 +55,10 @@ def create_app(test_config=None):
         return render_template("/about.html")
     
     
+    # JavaScript Disabled
     
-    
+    @app.route('/javascript_disabled.html')
+    def js_disabled():
+        return render_template("/javascript_disabled.html")
     
     return app

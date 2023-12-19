@@ -1,19 +1,24 @@
 <html>
 <head>
 
-  <!--- Responsive Platform --->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+  <!--- Content Security Policy (CSP)-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+<meta http-equiv="Content-Security-Policy" content="img-src 'self' github.com/Isaaker/Ghost_Simulator_ES">
 
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex">
 
-  <!--- Favicon --->
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-  <link rel="manifest" href="./images/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#fade95">
-  <meta name="theme-color" content="#fade95">
+<!--- Responsive Platform --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+<meta charset="utf-8">
+
+<!--- Favicon --->
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+<link rel="manifest" href="{{url_for('static', filename='images/site.webmanifest')}}">
+<meta name="msapplication-TileColor" content="#fade95">
+<meta name="theme-color" content="#fade95">
 
   <!--- Check JavaScript --->
   <script>
@@ -63,7 +68,7 @@
 </head>
 <body>
   <div class="message">
-    <img src="./images/java_script.svg" alt="Java Script Icon" widt="80" height="80"><h1 class="header">JavaScript no esta activado</h1>
+    <img src="{{url_for('static', filename='images/tech_logos/javascript_logo.svg')}}" alt="Java Script Icon" widt="80" height="80"><h1 class="header">JavaScript no esta activado</h1>
     <p class="body">
       Nuestra plataforma utiliza una tecnología llamada JavaScript, tu navegador tiene desactivada esta función y por lo tanto no puedes usar la plataforma.
     </p>

@@ -1,0 +1,136 @@
+body {
+	background: repeating-linear-gradient(
+      -45deg,
+      #fade95,
+      orangered 10px,
+      #fade95 10px,
+      orangered 20px
+    )
+    #fade95;
+  background-blend-mode: screen;
+	font-family: "Century Gothic";
+	color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1{
+  font-family: "Century Gothic";
+	color: black;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+	background-color: #fade95;
+	font-family: "Century Gothic";
+	color: black;
+  padding: 20px;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	border-top: 1px solid black;
+}
+
+/* Access Button */
+
+.access_button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid black;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  align-items: right;
+  margin-bottom: 10px
+}
+
+.access_button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #fade95;
+  z-index: -1;
+}
+
+.access_button:hover, button:focus {
+  color: black;
+}
+
+.access_button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.access_button:active {
+  transform: scale(0.9);
+}
+
+/* Head Banner */
+.head_banner {
+  border-radius: 20px;
+}
+
+/* See the social buttons*/
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px #635dff;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}

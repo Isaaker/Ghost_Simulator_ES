@@ -26,19 +26,31 @@ h1{
 footer {
 	background-color: #fade95;
 	font-family: "Century Gothic";
+  text-align: center;
+  text-decoration: none;
 	color: black;
+  flex-direction: row;
   padding: 20px;
   margin-top: auto;
+  justify-content: space-evenly;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-	border-top: 1px solid black;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+b{
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
 /* Access Button */
 
-.access_button {
-  font-size: 18px;
+.default_button {
+  font-size: auto;
   letter-spacing: 2px;
   text-transform: uppercase;
   display: inline-block;
@@ -54,10 +66,9 @@ footer {
   transition: 0.3s ease all;
   z-index: 1;
   align-items: right;
-  margin-bottom: 10px
 }
 
-.access_button:before {
+.default_button:before {
   transition: 0.5s all ease;
   position: absolute;
   top: 0;
@@ -70,19 +81,25 @@ footer {
   z-index: -1;
 }
 
-.access_button:hover, button:focus {
+.default_button:hover, button:focus {
   color: black;
 }
 
-.access_button:hover:before, button:focus:before {
+.default_button:hover:before, button:focus:before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
 }
 
-.access_button:active {
+.default_button:active {
   transform: scale(0.9);
+}
+.buttons_div{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: right;
+  margin-bottom: 10px
 }
 
 /* Head Banner */

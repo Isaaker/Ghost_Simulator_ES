@@ -25,7 +25,6 @@
 <!--- CSS Style --->
 <link rel="stylesheet" type="text/css" href="/static/css/index.css">
 
-
 <title>Ghost Simulator - Inicio</title>
 </head>
 <body>
@@ -35,18 +34,64 @@
                 Acceso
             </button>
         </form>
-        <form action="about.html">
-            <button class="default_button">
-                ?
-            </button>
-        </form>
     </div>
     
     <img class="head_banner" src="{{url_for('static', filename='images/archery.png')}}" width="100%" height=auto>
 
     <!--- Carrusel --->
 
-
+    <h1>Explorar</h1>
+      
+    <div id="flex-container" class="tags">
+        <div id="left-zone">
+          <ul class="list">
+            <li class="item">
+              <input type="radio" id="radio_tag-1" name="basic_carousel" checked="checked" />
+              <label class="label_tag-1" for="radio_tag-1">Creada por la comunidad</label>
+              <div class="content-test content_tag-1">
+                <span class="picto"></span>
+                <h1>Creada por la comunidad</h1>
+                <p>Nuestra plataforma online esta creada por y para la comunidad, por lo que puede acceder en cualquier momento a su codigo fuente, lo que brinda una mayor transparencia.</p>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_tag-2" name="basic_carousel" />
+              <label class="label_tag-2" for="radio_tag-2">Privada y Segura</label>
+              <div class="content-test content_tag-2">
+                <span class="picto"></span>
+                <h1>Privada y Segura</h1>
+                <p>Nuestra plataforma es privada y solo compartimos los datos estrictamente necesarios con nuestros proovedores de confianza. Además, utilizamos sistemas de seguridad que garantizan nuestra seguridad y la tuya en la plataforma.</p>
+                <br>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_tag-3" name="basic_carousel" />
+              <label class="label_tag-3" for="radio_tag-3">Multiplataforma</label>
+              <div class="content-test content_tag-3">
+                <span class="picto"></span>
+                <h1>Multiplataforma</h1>
+                <p>Usalo en tu ordenador, tablet, movil e incluso televisión. Da igual que sea iOS, Android, Windows, Linux o MacOS</p>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_tag-4" name="basic_carousel" />
+              <label class="label_tag-4" for="radio_tag-4">Saber mas...</label>
+              <div class="content-test content_tag-4">
+                <span class="picto"></span>
+                <h1>Saber mas...</h1>
+                <p>Para saber más te recomendamos que visites la página específica acerca de nosotros en la que tratamos los temás aqui expuestos con más amplitud.</p>
+                <form action="about.html">
+                  <button class="default_button">
+                      Acerca de...
+                  </button>
+                </form>
+                <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="right-zone"></div>
+    </div>
 
     <h1>Nuestras Redes Sociales</h1>
     <div class="parent">

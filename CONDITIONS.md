@@ -2,7 +2,7 @@
 
 # Condiciones de uso de Archery Ghost Simulator
 
-**Versión 2.4 - 23/11/23**
+**Versión 2.5 - 23/12/23**
 
 ## 1. Introducción
 
@@ -130,6 +130,8 @@ Para cumplir con las leyes aplicables se le preguntara al acceder a la plataform
 
 Al aceptar esta Política de Privacidad, también acepta la de nuestros proovedores que también procesaran sus datos de acuerdo a su propia Política de Privacidad, para saber más dirigase a [este apartado](https://github.com/Isaaker/Ghost_Simulator_ES/edit/main/CONDITIONS.md#terceros-destinatarios-de-los-datos-personales).
 
+**Al cambiar su dirección de email (previo aviso al administrador que es el encargado de realizar el cambio), se le vovlerá a solicitar que acepte las condiciones de uso de la plataforma, esto no implica que al cambiar el email halla dejado de aceptar las condiciones de uso, si no que nos indica que usted también acepta que se traten los datos de ese email.**
+
 ### Ejercitar sus derechos
 
 Para solicitar una copia o el borrado de los datos, puedes dirigirte a la siguiente dirección de correo electrónico: archery.ghost.simulator@gmail.com.
@@ -148,6 +150,6 @@ Si tienes alguna pregunta o queja sobre estas condiciones de uso, puedes ponerte
 
 <img src="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/images/Archery_Ghost_Simulator.png?raw=true" alt="Logo de Archery Ghost Simulator" width="50" height="50">
 
-**En Madrid a 24 de Noviembre de 2023**
+**En Madrid a 23 de Diciembre de 2023**
 
 Isaac Hernán Martí, Administrador de Ghost Archery Simulator

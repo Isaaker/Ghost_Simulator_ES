@@ -22,6 +22,10 @@ def create_app(test_config=None):
     except OSError:
         pass
     
+    ### APP VERSION ###
+
+    app_version = "3.0.0-beta"
+
     ### APP ROUTES ###
 
     # Index
@@ -37,8 +41,8 @@ def create_app(test_config=None):
 
     @app.route('/login.html')
     @app.route('/login')
-    def login_page():
-        return render_template("/login.html")
+    def login_page(app_version=app_version):
+        return render_template("/login.html", app_version=app_version)
 
     # Simulator Home
 
@@ -51,8 +55,16 @@ def create_app(test_config=None):
 
     @app.route('/about.html')
     @app.route('/about')
-    def about_page():
-        return render_template("/about.html")
+    def about_page(app_version=app_version):
+        return render_template("/about.html", app_version=app_version)
+
+    
+    # Settings
+
+    @app.route('/settings.html')
+    @app.route('/settings')
+    def settings_page(app_version=app_version):
+        return render_template("/settings.html", app_version=app_version)
     
     
     # JavaScript Disabled

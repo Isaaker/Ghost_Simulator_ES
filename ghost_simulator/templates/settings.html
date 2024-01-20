@@ -1,0 +1,116 @@
+<!doctype html>
+<html
+<head>
+
+<!--- Content Security Policy (CSP)-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.auth0.com;">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+<meta http-equiv="Content-Security-Policy" content="img-src 'self' github.com/Isaaker/Ghost_Simulator_ES">
+
+
+<!--- Responsive Platform --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+<meta charset="utf-8">
+
+
+<!--- Favicon --->
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+<link rel="manifest" href="{{url_for('static', filename='images/site.webmanifest')}}">
+<meta name="msapplication-TileColor" content="#fade95">
+<meta name="theme-color" content="#fade95">
+
+<!--- Check JavaScript --->
+<noscript>
+	<meta http-equiv="refresh" content="0;URL='./javascript_disabled.html'" />
+</noscript>
+
+<!--- CSS Style --->
+<link rel="stylesheet" type="text/css" href="/static/css/settings.css">
+<link rel="stylesheet" type="text/css" href="/static/css/menu.css">
+
+
+<!--- JS Reset Password Trigger-->
+
+<script src="https://cdn.auth0.com/js/auth0/9.11/auth0.min.js"></script>
+<script type="text/javascript">
+	function reset_password(){
+		// Script uses auth0.js. See Remarks for details.
+		var user_email = document.getElementById('user_email').value;
+		var webAuth = new auth0.WebAuth({
+			domain:       '{https://ghostsimulator.eu.auth0.com}',
+			clientID:     '{clientID}'
+		});
+		
+		webAuth.changePassword({
+			connection: 'Username-Password-Authentication',
+			email:   user_email,
+		}, function (err, resp) {
+			if(err){
+			console.log(err.message);
+			}else{
+			console.log(resp);
+			window.alert("Password change requested, please check your email.");
+			}
+		});
+	}
+</script>
+
+<title>Ajustes</title>
+</head>
+
+<main>
+	<header>
+		⚙️ Ajustes
+		<div class="UI_icons">
+			<a href="/about.html"><img src="{{url_for('static', filename='/images/ui_icons/info.svg')}}" alt="about"><img></a>
+			<a href="/settings.html"><img src="{{url_for('static', filename='/images/ui_icons/settings.svg')}}" alt="settings"><img></a>
+			<a href="https://ghostsimulator.eu.auth0.com/oidc/logout"><img src="{{url_for('static', filename='/images/ui_icons/log-out.svg')}}" alt="logout"><img></a>
+		</div>
+	</header>
+
+	<body>
+		<div class="message">
+
+			<!--- Chenge Password-->
+
+			<h1>🔑 Contraseña</h1>
+			<p>En este apartado encontrara todo lo referente a la contraseña que usa para acceder a la plataforma.</p>
+			
+			<center>
+				<div class="coolinput">
+					<label for="input" class="text">Email:</label>
+					<input type="text" placeholder="Introduzca su email" name="input" class="input" id="user_email">
+				</div>
+			</center>
+
+			<br>
+			
+			<button class="destroy_button" onclick="reset_password()">
+                Cambiar contraseña
+            </button>
+			
+			<h1>✉️ Email</h1>
+			<p>En este apartado encontrara todo lo referente a el email que usa para acceder a la plataforma.</p>
+			<button class="destroy_button">
+                Cambiar email
+            </button>
+
+			<h1>⚙️ Version</h1>
+			<p>Debajo se muestra la version de la plataforma que esta usando.</p>
+			<p class="bold_text">App version: {{ app_version }}</p>
+			
+			<br>
+			<a href="mailto:archery.ghost.simulator@gmail.com">Contactar con el administrador</a>
+		</div>
+	</body>
+	<footer>
+		<center><a href="https://piscinadeentropia.es">Creado por: Isaac Hernán Martí </a></center>
+		<center><a href="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt">© CC BY-NC-ND 4.0 </a></center>
+	</footer>
+</main>
+
+
+</html>

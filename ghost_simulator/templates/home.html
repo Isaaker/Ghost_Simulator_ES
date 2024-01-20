@@ -1,0 +1,66 @@
+<!doctype html>
+<html
+<head>
+
+<!--- Content Security Policy (CSP)-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+<meta http-equiv="Content-Security-Policy" content="img-src 'self' github.com/Isaaker/Ghost_Simulator_ES">
+
+
+<!--- Responsive Platform --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+<meta charset="utf-8">
+
+
+<!--- Favicon --->
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='images/favicon-16x16.png')}}">
+<link rel="manifest" href="{{url_for('static', filename='images/site.webmanifest')}}">
+<meta name="msapplication-TileColor" content="#fade95">
+<meta name="theme-color" content="#fade95">
+
+<!--- Check JavaScript --->
+<noscript>
+	<meta http-equiv="refresh" content="0;URL='./javascript_disabled.html'" />
+</noscript>
+
+<!--- CSS Style --->
+<link rel="stylesheet" type="text/css" href="/static/css/home.css">
+<link rel="stylesheet" type="text/css" href="/static/css/menu.css">
+
+<title>Ghost Archery Simulator</title>
+</head>
+
+<main>
+	<header>
+		Archery Ghost Simulator
+		<div class="UI_icons">
+			<a href="/about.html"><img src="{{url_for('static', filename='/images/ui_icons/info.svg')}}" alt="about"><img></a>
+			<a href="/settings.html"><img src="{{url_for('static', filename='/images/ui_icons/settings.svg')}}" alt="settings"><img></a>
+			<a href="https://ghostsimulator.eu.auth0.com/oidc/logout"><img src="{{url_for('static', filename='/images/ui_icons/log-out.svg')}}" alt="logout"><img></a>
+		</div>
+
+	</header>
+
+	<body>
+		<br>
+		<!--- Web Page Banner --->
+		<img class="head_banner" src="{{url_for('static', filename='images/archery.png')}}" width="100%" height=auto>
+		<br>
+
+		<center>
+			<button id="startSimulationBtn" onclick="validateInput()" class="shadow__btn">Empezar Simulación</button>
+		</center>
+		<br>
+	</body>
+	<footer>
+		<center><a href="https://piscinadeentropia.es">Creado por: Isaac Hernán Martí </a></center>
+		<center><a href="https://github.com/Isaaker/Ghost_Simulator_ES/blob/main/LICENSE.txt">© CC BY-NC-ND 4.0 </a></center>
+	</footer>
+</main>
+
+
+</html>
